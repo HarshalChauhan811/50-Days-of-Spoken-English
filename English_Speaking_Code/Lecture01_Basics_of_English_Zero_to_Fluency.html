@@ -1,244 +1,788 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecture 01 — Basics of English: Zero to Fluency</title>
+<title>Lecture 01: Basics of English — Zero to Fluency</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@page{size:A4 portrait;margin:0;@top-right-corner{content:"Harshal Chauhan";font:9px 'Poppins',sans-serif;color:#9E9E9E;opacity:.3}}
-*{box-sizing:border-box}body{margin:0;padding:20mm 20mm 20mm 25mm;background:#FEFAF6;background-image:linear-gradient(to bottom,rgba(0,0,0,.03) 1px,transparent 1px);background-size:100% 28px;color:#2C2C2C;font:12px/1.72 'Poppins',sans-serif;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
-h1{font-size:40px;line-height:1.18;color:#5B2E3A;border-bottom:3px solid #2A7F7F;padding-bottom:9px;margin:0 0 18px;font-weight:700;letter-spacing:-.4px}h2{font-size:24px;line-height:1.3;color:#2A7F7F;border-bottom:2px solid #2A7F7F;padding-bottom:6px;margin:30px 0 14px}h3{font-size:18px;color:#D36B46;margin:23px 0 9px}h4{font-size:14px;color:#6B5B7A;text-transform:uppercase;letter-spacing:.6px;margin:18px 0 8px}p{margin:7px 0}.lead{font-size:14px;line-height:1.8;color:#3D3D3D}.en{font-size:12.5px;color:#1C1C1C;font-weight:500}.hi{font-style:italic;color:#7A7A7A;font-size:11px}.muted{font-size:10px;color:#7A7A7A}.formula{font-weight:700;color:#5B2E3A;font-size:13px}.hl{color:#5B2E3A;font-weight:700}.key{display:inline-block;background:#FFF3E6;color:#D36B46;border:1px solid #F0C9A0;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:700}
-.box{border-left:5px solid;border-radius:0 12px 12px 0;padding:15px 19px;margin:14px 0 16px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.04),0 0 0 1px rgba(0,0,0,.02);page-break-inside:avoid}.box .label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;margin-bottom:7px}.rose{border-color:#5B2E3A;background:#FDF8F8}.rose .label{color:#5B2E3A}.teal{border-color:#2A7F7F;background:#F6FBFB}.teal .label{color:#2A7F7F}.coral{border-color:#C25A3C;background:#FEF5F3}.coral .label{color:#C25A3C}.lav{border-color:#6B5B7A;background:#F8F7FB}.lav .label{color:#6B5B7A}.terr{border-color:#D36B46;background:#FEF9F5}.terr .label{color:#D36B46}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:#fff;border:1px solid #E2D8D0;border-radius:12px;padding:13px 15px;page-break-inside:avoid}.two{display:flex;gap:12px}.two>*{flex:1}.orn{text-align:center;color:#C8B6A6;font-size:18px;letter-spacing:6px;margin:26px 0}
-table{width:100%;border-collapse:separate;border-spacing:0;margin:17px 0;border:1px solid #E2D8D0;border-radius:12px;overflow:hidden;background:#fff;page-break-inside:avoid}th{background:#F9F3EC;color:#5B2E3A;font-size:11px;font-weight:700;text-align:left;padding:10px 12px;border-bottom:2px solid #D36B46}td{padding:9px 12px;font-size:11px;border-bottom:1px solid #EEE5DD;vertical-align:top}tr:last-child td{border-bottom:none}tr:nth-child(even) td{background:#FEFAF6}
-ul,ol{margin:7px 0;padding-left:23px}li{margin:5px 0}.chips span{display:inline-block;padding:4px 8px;border:1px solid #D9CEC5;border-radius:999px;background:#fff;color:#5B2E3A;font-size:10.5px;font-weight:600;margin:2px 4px 2px 0}.footer{margin-top:40px;border-top:1px solid #E2D8D0;padding-top:24px;text-align:center;color:#7A7A7A;font-size:11px;font-weight:500;letter-spacing:1px}
-</style></head><body>
+
+@page{
+  size:A4 portrait;
+  margin:0;
+  @top-right-corner{
+    content:"Harshal Chauhan";
+    font:9px 'Poppins',sans-serif;
+    color:#9E9E9E;
+    opacity:.3;
+  }
+}
+*{box-sizing:border-box}
+body{
+  padding:15mm 14mm 15mm 18mm;
+  -webkit-print-color-adjust:exact!important;
+  print-color-adjust:exact!important;
+  background:#FEFAF6;
+  font-family:'Poppins',sans-serif;
+  color:#2C2C2C;
+  font-size:9px;
+  line-height:1.48;
+  margin:0;
+  background-image:linear-gradient(to bottom,rgba(0,0,0,.03) 1px,transparent 1px);
+  background-size:100% 28px;
+}
+h1{
+  font-size:32px;line-height:1.12;font-weight:700;color:#5B2E3A;
+  letter-spacing:-.4px;border-bottom:3px solid #2A7F7F;padding-bottom:8px;
+  margin:0 0 10px;
+}
+h2{
+  font-size:19px;line-height:1.2;font-weight:700;color:#2A7F7F;
+  border-bottom:2px solid #2A7F7F;padding-bottom:5px;margin:20px 0 9px;
+}
+h3{font-size:15px;line-height:1.25;font-weight:700;color:#D36B46;margin:15px 0 7px}
+h4{font-size:12px;font-weight:600;color:#6B5B7A;text-transform:uppercase;letter-spacing:.6px;margin:12px 0 6px}
+h5{font-size:12px;font-weight:600;color:#3C3C3C;text-transform:uppercase}
+p{margin:7px 0}
+.lead{font-size:12px;line-height:1.8;color:#3D3D3D}
+.en{font-size:11px;font-weight:500;color:#1C1C1C}
+.en strong{font-weight:700}
+.hi{font-size:10px;font-style:italic;color:#7A7A7A}
+.note{font-size:10px;color:#7A7A7A;font-style:italic}
+.box{
+  border-radius:0 12px 12px 0;padding:10px 13px;margin-bottom:9px;
+  background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.04),0 0 0 1px rgba(0,0,0,.02);
+  page-break-inside:avoid;border-left:5px solid;
+}
+.rule{border-left-color:#5B2E3A;background:#FDF8F8}.rule .label{color:#5B2E3A}
+.example{border-left-color:#2A7F7F;background:#F6FBFB}.example .label{color:#2A7F7F}
+.tip{border-left-color:#2A7F7F;background:#F6FBFB}.tip .label{color:#2A7F7F}
+.summary{border-left-color:#D36B46;background:#FEF9F5}.summary .label{color:#D36B46}
+.practice{border-left-color:#6B5B7A;background:#F8F7FB}.practice .label{color:#6B5B7A}
+.warning{border-left-color:#C25A3C;background:#FEF5F3}.warning .label{color:#C25A3C}
+.label{display:block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px}
+.formula{font-size:13px;font-weight:600;color:#5B2E3A;letter-spacing:.2px}
+.key-rule{
+  background:#FFF3E6;color:#D36B46;font-weight:700;padding:1px 6px;border-radius:4px;
+  border:1px solid #F0C9A0;font-size:11px
+}
+.hl-word{color:#5B2E3A;font-weight:700}
+.golden{
+  border-left:5px solid #D36B46;background:#FFF8F2;border-radius:0 10px 10px 0;
+  padding:12px 16px;font-style:italic;color:#5B2E3A;margin:14px 0;
+}
+table{
+  width:100%;border-collapse:separate;border-spacing:0;border:1px solid #E2D8D0;
+  border-radius:12px;overflow:hidden;page-break-inside:avoid;margin:18px 0;background:#fff
+}
+th{background:#F9F3EC;color:#5B2E3A;font-weight:700;font-size:11px;padding:6px 8px;border-bottom:2px solid #D36B46;text-align:left}
+td{padding:6px 8px;font-size:9.5px;background:#fff;border-bottom:1px solid #EEE5DD;vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#FEFAF6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.card{background:#fff;border:1px solid #E2D8D0;border-radius:12px;padding:8px 10px;box-shadow:0 2px 6px rgba(0,0,0,.03);page-break-inside:avoid}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.pill{display:inline-block;padding:2px 6px;margin:2px 4px 2px 0;border:1px solid #D9CEC5;border-radius:999px;background:#fff;color:#5B2E3A;font-size:9px;font-weight:600}
+.num{display:inline-block;min-width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;background:#FFF3E6;color:#D36B46;font-weight:700;margin-right:5px}
+.ornament{text-align:center;margin:17px 0;color:#C8B6A6;font-size:18px;letter-spacing:6px}
+ul,ol{margin-top:6px;padding-left:17px}
+li{margin:3px 0}
+.badge-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.badge{background:#fff;border:1px solid #E2D8D0;border-radius:10px;padding:10px;text-align:center}
+.badge b{display:block;color:#5B2E3A;font-size:12px}
+.center{text-align:center}
+.footer{margin-top:24px;border-top:1px solid #E2D8D0;padding-top:24px;text-align:center;color:#7A7A7A;font-size:11px;font-weight:500;letter-spacing:1px}
+@media print{
+  .grid,.three,.badge-grid{break-inside:avoid}
+}
+</style>
+
+<style>
+/* Premium compact reading layout */
+h2,h3,h4,.box,table,.grid,.three,.badge-grid,.ornament{break-inside:avoid}
+table{margin:10px 0}
+th{padding:6px 8px!important;font-size:9px!important}
+td{padding:6px 8px!important;font-size:9px!important}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.three{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.badge-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.card{padding:8px 10px!important}
+.card h4{margin-top:5px!important}
+.box{padding:10px 13px!important}
+.box p{margin:4px 0}
+.lead{font-size:12px;line-height:1.6}
+.golden{padding:9px 12px;margin:10px 0}
+.ornament{font-size:14px;margin:17px 0}
+ul,ol{margin-top:4px}
+.footer{margin-top:24px;padding-top:16px}
+</style>
+
+</head>
+<body>
+
 <h1>Lecture 01: Basics of English — Zero to Fluency</h1>
-<p class="lead">यह lecture English सीखने की शुरुआत को बिल्कुल foundation level से build करता है। Flow है: <strong>Alphabet → Letters के Forms → Vowels & Consonants → Sounds & Pronunciation → Word → Sentence → Subject–Verb–Object → Helping Verb & Main Verb → Learning Levels → Daily Speaking</strong>.</p>
-<div class="box terr"><span class="label">Learning Goal</span><p>Target यह है कि English को random rules की तरह नहीं, बल्कि एक <strong>sequence</strong> की तरह समझा जाए—छोटी इकाई से बड़ी communication unit तक।</p></div>
 
-<h2>1. Where Should English Learning Begin?</h2>
-<h3>Start from the Foundation</h3>
-<p>Lecture का पहला major principle है: English सीखते समय शुरुआत उस point से करो जहाँ आपकी actual understanding मौजूद है। अगर vocabulary, sentence structure या pronunciation की foundation weak है, तो सीधे advanced grammar पर jump करना learning को कठिन बना सकता है।</p>
-<div class="box rose"><span class="label">Core Principle</span><p class="formula">Zero → Words → Sentences → Paragraph → Speech → Fluency</p><p>सीखने का रास्ता step-by-step होना चाहिए। एक level clear होने के बाद अगला level naturally आसान होता है।</p></div>
-<div class="box teal"><span class="label">Course Learning Philosophy</span><p>Lecture में basic से शुरू करके धीरे-धीरे advanced communication तक जाने पर जोर दिया गया है। शुरुआती learner और थोड़ी English जानने वाला learner—दोनों के लिए foundation useful है।</p></div>
+<p class="lead">
+English सीखने की मजबूत शुरुआत <strong>foundation</strong> से होती है। पहले letters और sounds को समझना, फिर words बनाना, उसके बाद sentences की structure और अंत में paragraph तथा speech तक पहुँचना एक natural learning ladder बनाता है।
+</p>
 
-<h2>2. The Basic Unit of English: Letters</h2>
-<h3>English Uses 26 Letters</h3>
-<p>Lecture के अनुसार English alphabet में <strong>26 letters</strong> होते हैं। इन्हीं letters की arrangement से English words और आगे sentences बनते हैं।</p>
-<table><thead><tr><th>Idea</th><th>Key Point</th></tr></thead><tbody>
-<tr><td>English alphabet</td><td class="en"><strong>26 letters</strong></td></tr>
-<tr><td>Learning implication</td><td>Letters को पहचानना और उनके sounds समझना आगे reading और speaking की foundation बनाता है।</td></tr>
-</tbody></table>
-<div class="box teal"><span class="label">Remember</span><p>Alphabet को सिर्फ A–Z की list की तरह मत देखो। आगे इन्हीं letters की <strong>form, sound और arrangement</strong> तीनों important होंगे।</p></div>
+<div class="box summary">
+<span class="label">The Learning Ladder</span>
+<p class="formula">Letters → Sounds → Words → Sentences → Paragraph → Speech</p>
+<p>इसी sequence को समझना जरूरी है। अगर नीचे की unit clear नहीं है, तो ऊपर की unit पर fluency बनाना difficult हो जाता है।</p>
+</div>
 
-<h2>3. Written Forms of Letters</h2>
-<h3>Capital, Small and Cursive Forms</h3>
-<p>Lecture में लिखने के आधार पर letters के अलग forms बताए गए हैं। Main practical forms हैं <strong>capital letters</strong> और <strong>small letters</strong>; cursive writing एक अलग writing style के रूप में mention की गई है।</p>
-<table><thead><tr><th>Form</th><th>Meaning / Use</th></tr></thead><tbody>
-<tr><td><strong>Capital Letters</strong></td><td>बड़े अक्षर; जैसे <span class="en"><strong>A, B, C</strong></span></td></tr>
-<tr><td><strong>Small Letters</strong></td><td>छोटे अक्षर; जैसे <span class="en"><strong>a, b, c</strong></span></td></tr>
-<tr><td><strong>Cursive</strong></td><td>Continuous / joined handwriting style.</td></tr></tbody></table>
-<div class="box lav"><span class="label">Study Note</span><p>Written form और spoken sound को अलग concepts समझो। कोई letter लिखा कैसे जाता है और बोला कैसे जाता है—दोनों अलग questions हैं।</p></div>
+<h2>1. The Foundation of English</h2>
 
-<h2>4. Vowels, Consonants and the Semi-Vowel Y</h2>
-<h3>The 26-Letter Classification</h3>
-<table><thead><tr><th>Category</th><th>Letters</th><th>Count</th></tr></thead><tbody>
-<tr><td><strong>Vowels</strong></td><td class="en"><strong>A, E, I, O, U</strong></td><td>5</td></tr>
-<tr><td><strong>Consonants</strong></td><td>Remaining letters except Y</td><td>20</td></tr>
-<tr><td><strong>Semi-vowel</strong></td><td class="en"><strong>Y</strong></td><td>1</td></tr>
-</tbody></table>
-<div class="box rose"><span class="label">Why Y Is Special</span><p>Lecture में <strong>Y</strong> को semi-vowel बताया गया है क्योंकि इसका pronunciation context के अनुसार vowel-like या consonant-like sound दे सकता है।</p></div>
-<div class="two"><div class="box teal"><span class="label">Vowel-like Use</span><p class="en"><strong>sky</strong></p><p class="hi">यहाँ Y vowel-like sound दे रहा है।</p></div><div class="box teal"><span class="label">Consonant-like Use</span><p class="en"><strong>yak</strong> · <strong>yellow</strong></p><p class="hi">यहाँ Y consonant-like /y/ sound देता है।</p></div></div>
+<h3>English Begins with Letters</h3>
+<p>English alphabet में <strong>26 letters</strong> होते हैं। यही letters आगे words और sentences बनाने की basic building blocks हैं।</p>
 
-<h2>5. Why Are They Called Vowels?</h2>
-<h3>The Articulation Concept</h3>
-<p>Lecture इस point को mouth-and-speech mechanism से explain करता है। Spoken sound हवा के flow, vocal folds और mouth के articulatory organs के interaction से निकलता है।</p>
-<div class="box rose"><span class="label">Speech Production Flow</span><p class="formula">Air → Vocal Folds → Voice → Mouth / Articulatory System → Sound</p></div>
-<h3>Key Articulatory Parts</h3>
-<div class="grid"><div class="card"><strong>Teeth</strong><p class="hi">कुछ sounds में teeth की position important होती है।</p></div><div class="card"><strong>Lips</strong><p class="hi">/b/, /p/ जैसे sounds में lips active होते हैं।</p></div><div class="card"><strong>Tongue</strong><p class="hi">Tip, middle और back अलग positions पर जा सकते हैं।</p></div><div class="card"><strong>Palate</strong><p class="hi">Tongue की contact position sound को बदल सकती है।</p></div></div>
-<h3>Vowel vs Consonant: Core Intuition</h3>
-<div class="two"><div class="box teal"><span class="label">Vowel</span><p>Lecture के अनुसार vowel sounds में airflow comparatively open/direct निकलता है और mouth के articulators से strong obstruction नहीं बनता।</p><p class="en"><strong>A, E, I, O, U</strong></p></div><div class="box coral"><span class="label">Consonant</span><p>Consonant sounds में lips, tongue या अन्य articulators airflow को रोकते, narrow करते या modify करते हैं।</p><p class="en"><strong>B, P, T</strong></p></div></div>
-<h3>Sound Examples</h3>
-<p class="en"><strong>B</strong> बोलते समय lips close होते हैं। <strong>P</strong> में भी lips active हैं। <strong>T</strong> में tongue की position बदलती है।</p>
-<div class="box lav"><span class="label">Important Distinction</span><p>यह section spelling नहीं, <strong>sound production</strong> समझने के लिए है। इसी वजह से pronunciation सीखते समय letter पहचानना पर्याप्त नहीं है; sound भी पहचानना होगा।</p></div>
+<div class="box rule">
+<span class="label">Core Fact</span>
+<p class="formula">English Alphabet = 26 Letters</p>
+<p class="hi">पूरी English language की written foundation इन्हीं 26 letters से बनती है।</p>
+</div>
 
-<h2>6. One Letter Can Have More Than One Sound</h2>
-<h3>Why Reading Becomes Confusing</h3>
-<p>Lecture का अगला step है यह समझना कि एक letter का pronunciation हर word में same नहीं होता। Context और word के अनुसार sound बदल सकता है।</p>
-<table><thead><tr><th>Letter</th><th>Example</th><th>Observation</th></tr></thead><tbody>
-<tr><td><strong>A</strong></td><td class="en"><strong>cat</strong> / <strong>car</strong></td><td>एक ही A अलग words में अलग sound दे सकता है।</td></tr>
-<tr><td><strong>C</strong></td><td class="en"><strong>cat</strong> / <strong>center</strong></td><td>C context के अनुसार /k/ या /s/ sound दे सकता है।</td></tr>
-<tr><td><strong>G</strong></td><td class="en"><strong>go</strong> / <strong>... </strong></td><td>Lecture में G के multiple sound possibilities की ओर संकेत किया गया है।</td></tr>
-<tr><td><strong>Y</strong></td><td class="en"><strong>yak</strong> / <strong>sky</strong></td><td>Consonant-like और vowel-like use।</td></tr>
-</tbody></table>
-<div class="box terr"><span class="label">Core Rule</span><p><span class="key">Letter ≠ Fixed Sound</span> एक letter को देखकर उसका sound automatically assume मत करो। Word को देखकर pronunciation determine करो।</p></div>
+<h3>Written and Oral Classification</h3>
 
-<h2>7. Why Do Letters Have Multiple Sounds?</h2>
-<h3>Language History as the Lecture's Explanation</h3>
-<p>Lecture इस variation को English के historical development से connect करता है। इसमें बताया गया है कि English में अलग-अलग भाषाओं से words और forms आए, इसलिए spelling–sound patterns हमेशा एक ही system के नहीं रहे। Lecture में Latin, French, Hebrew और Greek जैसे linguistic sources का उल्लेख किया गया है।</p>
-<div class="box teal"><span class="label">Learning Takeaway</span><p>History का purpose यहाँ याद करने के लिए list बनाना नहीं है। Main takeaway यह है कि English pronunciation को केवल “एक letter = एक sound” rule से समझना पर्याप्त नहीं है।</p></div>
+<table>
+<thead><tr><th>Basis</th><th>Classification</th><th>What It Means</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Writing</strong></td>
+<td>Small Letters / Capital Letters / Cursive Writing</td>
+<td class="hi">Letters को लिखने के अलग-अलग forms।</td>
+</tr>
+<tr>
+<td><strong>Speaking</strong></td>
+<td>Vowels / Consonants</td>
+<td class="hi">Letters और sounds को pronunciation के आधार पर समझना।</td>
+</tr>
+</tbody>
+</table>
 
-<h2>8. A Practical Sound Map</h2>
-<p>Lecture में कई letters के possible sounds revise कराए गए। नीचे उन्हें clean study sheet की तरह organize किया गया है। यह pronunciation possibilities का introductory map है, complete phonetic dictionary नहीं।</p>
-<table><thead><tr><th>Letter</th><th>Sound Possibilities Highlighted in Lecture</th></tr></thead><tbody>
-<tr><td><strong>A</strong></td><td>अ / ए / ऐ / आ जैसे अलग sounds का उदाहरणात्मक use</td></tr>
-<tr><td><strong>B</strong></td><td>ब / letter-name sound</td></tr>
-<tr><td><strong>C</strong></td><td>क / स</td></tr>
-<tr><td><strong>D</strong></td><td>ड / द</td></tr>
-<tr><td><strong>E</strong></td><td>ए / ई</td></tr>
-<tr><td><strong>G</strong></td><td>ग / ज / letter-name sound</td></tr>
-<tr><td><strong>H</strong></td><td>ह / silent H के examples</td></tr>
-<tr><td><strong>I</strong></td><td>इ / आइ</td></tr>
-<tr><td><strong>K</strong></td><td>क / silent K के examples</td></tr>
-<tr><td><strong>O</strong></td><td>ओ / ऑ</td></tr>
-<tr><td><strong>T</strong></td><td>ट / त जैसे अलग articulation-based sounds</td></tr>
-<tr><td><strong>U</strong></td><td>अ / उ / यू जैसे sounds</td></tr>
-<tr><td><strong>W, X, Y, Z</strong></td><td>Lecture में इनके अलग pronunciation possibilities भी revise किए गए।</td></tr>
-</tbody></table>
-<div class="box coral"><span class="label">Do Not Memorize Blindly</span><p>इस table को “हर word में यही sound आएगा” rule की तरह मत पढ़ो। यह lesson-level awareness है कि letters context-sensitive हो सकते हैं।</p></div>
+<div class="box tip">
+<span class="label">Study Direction</span>
+<p>पहले यह clear करो कि <strong>letter क्या है</strong>, फिर यह समझो कि उसका <strong>sound क्या है</strong>। इसके बाद letters को combine करके words पढ़ना आसान होता है।</p>
+</div>
 
-<h2>9. Silent Letters</h2>
-<h3>Written but Not Pronounced</h3>
-<p>कुछ words में कोई letter spelling का हिस्सा होता है लेकिन spoken pronunciation में उस letter की अलग sound नहीं सुनाई देती। Lecture ने इसे <strong>silent letter</strong> concept के रूप में introduce किया।</p>
-<table><thead><tr><th>Word</th><th>Silent Letter</th><th>How to Think About It</th></tr></thead><tbody>
-<tr><td class="en"><strong>honest</strong></td><td><strong>H</strong></td><td>H लिखा है, लेकिन pronunciation में silent है।</td></tr>
-<tr><td class="en"><strong>hour</strong></td><td><strong>H</strong></td><td>H silent है।</td></tr>
-<tr><td class="en"><strong>honour</strong></td><td><strong>H</strong></td><td>H silent है।</td></tr>
-<tr><td class="en"><strong>knowledge</strong></td><td><strong>K</strong></td><td>K silent है।</td></tr>
-<tr><td class="en"><strong>knife</strong></td><td><strong>K</strong></td><td>K silent है।</td></tr>
-</tbody></table>
-<div class="box lav"><span class="label">Pronunciation Habit</span><p>New word मिलने पर तीन चीजें check करो: <strong>spelling, sound, example</strong>. केवल spelling देखकर pronunciation guess मत करो।</p></div>
+<h2>2. Vowels and Consonants</h2>
 
-<h2>10. From Letters to Words</h2>
+<h3>Vowels</h3>
+<p>English में पाँच मुख्य vowels हैं:</p>
+
+<div class="badge-grid">
+<div class="badge"><b>A</b><span>Vowel</span></div>
+<div class="badge"><b>E</b><span>Vowel</span></div>
+<div class="badge"><b>I</b><span>Vowel</span></div>
+<div class="badge"><b>O</b><span>Vowel</span></div>
+<div class="badge"><b>U</b><span>Vowel</span></div>
+</div>
+
+<div class="box rule">
+<span class="label">Vowel Set</span>
+<p class="formula">A, E, I, O, U</p>
+<p>इन पाँचों को vowels कहा जाता है। बाकी 20 letters consonants के रूप में रखे जाते हैं, जबकि <strong>Y</strong> को lesson में semi-vowel के रूप में समझाया गया है।</p>
+</div>
+
+<h3>Why Is Y Called a Semi-Vowel?</h3>
+
+<p><strong>Y</strong> का pronunciation context के अनुसार बदल सकता है। कुछ words में यह consonant-like sound देता है, जबकि कुछ situations में vowel-like sound के रूप में काम करता है। इसी कारण इसे <strong>semi-vowel</strong> कहा जाता है।</p>
+
+<table>
+<thead><tr><th>Word</th><th>Observed Role of Y</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>sky</strong></td><td class="hi">Y vowel-like sound में contribute करता है।</td></tr>
+<tr><td class="en"><strong>yak</strong></td><td class="hi">Y consonant-like sound देता है।</td></tr>
+<tr><td class="en"><strong>yellow</strong></td><td class="hi">Y consonant-like sound देता है।</td></tr>
+</tbody>
+</table>
+
+<div class="golden">
+<strong>Remember:</strong> 26 letters = 5 vowels + 20 consonants + Y as a semi-vowel.
+</div>
+
+<h2>3. How Speech Sounds Are Produced</h2>
+
+<p>Pronunciation को समझने के लिए केवल alphabet याद करना पर्याप्त नहीं है। Speech production में breathing, vocal cords और mouth के articulatory parts मिलकर sound बनाते हैं।</p>
+
+<h3>The Basic Sound Path</h3>
+<div class="grid">
+<div class="card"><span class="num">1</span><strong>Airflow</strong><p>हम respiration के through हवा लेते और बाहर छोड़ते हैं।</p></div>
+<div class="card"><span class="num">2</span><strong>Vocal Cords</strong><p>कंठ के पास vocal cords airflow को sound में convert करने में भूमिका निभाते हैं।</p></div>
+<div class="card"><span class="num">3</span><strong>Articulatory System</strong><p>आवाज़ बाहर निकलते समय mouth और speech organs उसके final sound को shape करते हैं।</p></div>
+<div class="card"><span class="num">4</span><strong>Final Sound</strong><p>Different articulation से अलग-अलग sounds produce होते हैं।</p></div>
+</div>
+
+<h3>Main Articulatory Parts</h3>
+<table>
+<thead><tr><th>Part</th><th>Role in Sound Production</th></tr></thead>
+<tbody>
+<tr><td><strong>Teeth</strong></td><td class="hi">कुछ sounds बनाते समय teeth की position महत्वपूर्ण होती है।</td></tr>
+<tr><td><strong>Lips</strong></td><td class="hi">B/P जैसे sounds में lips actively use होते हैं।</td></tr>
+<tr><td><strong>Nose</strong></td><td class="hi">कुछ sounds nasal passage से निकलते हैं।</td></tr>
+<tr><td><strong>Hard Palate</strong></td><td class="hi">Tongue positioning के लिए important surface।</td></tr>
+<tr><td><strong>Soft Palate</strong></td><td class="hi">Oral और nasal sound production में role।</td></tr>
+<tr><td><strong>Tongue</strong></td><td class="hi">Tip, middle और back positions अलग sounds बनाने में मदद करते हैं।</td></tr>
+</tbody>
+</table>
+
+<h3>Vowels vs Consonants: Articulation Idea</h3>
+
+<div class="grid">
+<div class="box example">
+<span class="label">Vowel</span>
+<p>Vowel sounds में airflow comparatively खुलकर बाहर निकलता है।</p>
+<p class="en"><strong>Aa… / Ee…</strong></p>
+</div>
+<div class="box example">
+<span class="label">Consonant</span>
+<p>Consonant sounds में lips, tongue या अन्य articulators airflow को modify या restrict करते हैं।</p>
+<p class="en"><strong>B / P / T</strong></p>
+</div>
+</div>
+
+<div class="box tip">
+<span class="label">Pronunciation Insight</span>
+<p>Sound production को समझने से यह clear होता है कि pronunciation केवल spelling पढ़ना नहीं है; <strong>mouth position + airflow + articulation</strong> भी matter करते हैं।</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>4. One Letter Can Have Multiple Sounds</h2>
+
+<p>English में एक letter हर word में exactly एक ही sound दे, ऐसा जरूरी नहीं है। Sound word और pronunciation context पर depend कर सकता है।</p>
+
+<h3>The Letter A</h3>
+<table>
+<thead><tr><th>Word</th><th>Observed Sound Pattern</th><th>Purpose of Practice</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>cat</strong></td><td>“a” sound</td><td class="hi">A के एक pronunciation pattern को notice करना।</td></tr>
+<tr><td class="en"><strong>car</strong></td><td>“aa” sound</td><td class="hi">A के दूसरे pronunciation pattern को notice करना।</td></tr>
+<tr><td class="en"><strong>father</strong></td><td>“aa” sound</td><td class="hi">Same letter, different sound context।</td></tr>
+<tr><td class="en"><strong>apple</strong></td><td>“a” sound</td><td class="hi">Word के भीतर sound पहचानना।</td></tr>
+</tbody>
+</table>
+
+<p>English vocabulary अलग-अलग भाषाई sources से विकसित हुई है। इसी linguistic history की वजह से spelling और pronunciation के patterns हमेशा perfectly uniform नहीं हैं।</p>
+
+<h3>Selected Letter-Sound Patterns Practiced</h3>
+<table>
+<thead><tr><th>Letter</th><th>Commonly Practiced Sounds / Examples</th></tr></thead>
+<tbody>
+<tr><td><strong>A</strong></td><td class="en">a / ae / aa / context-dependent variants</td></tr>
+<tr><td><strong>B</strong></td><td class="en">b / letter name B</td></tr>
+<tr><td><strong>C</strong></td><td class="en">k / s</td></tr>
+<tr><td><strong>D</strong></td><td class="en">d / t-like or dental variants in connected pronunciation</td></tr>
+<tr><td><strong>E</strong></td><td class="en">e / ee</td></tr>
+<tr><td><strong>G</strong></td><td class="en">g / j</td></tr>
+<tr><td><strong>H</strong></td><td class="en">h / letter-name pronunciation</td></tr>
+<tr><td><strong>I</strong></td><td class="en">i / ai</td></tr>
+<tr><td><strong>J</strong></td><td class="en">j / letter name J</td></tr>
+<tr><td><strong>K</strong></td><td class="en">k / letter name K</td></tr>
+<tr><td><strong>L</strong></td><td class="en">l / letter name L</td></tr>
+<tr><td><strong>M</strong></td><td class="en">m / letter name M</td></tr>
+<tr><td><strong>N</strong></td><td class="en">n / letter name N</td></tr>
+<tr><td><strong>O</strong></td><td class="en">o / au-like pattern</td></tr>
+<tr><td><strong>P</strong></td><td class="en">p / letter name P</td></tr>
+<tr><td><strong>Q</strong></td><td class="en">qu / k-like pattern in specific contexts</td></tr>
+<tr><td><strong>R</strong></td><td class="en">r / letter name R</td></tr>
+<tr><td><strong>S</strong></td><td class="en">s / z-like pattern</td></tr>
+<tr><td><strong>T</strong></td><td class="en">t / dental “t” variations depending on pronunciation</td></tr>
+<tr><td><strong>U</strong></td><td class="en">u / oo / uh-like patterns</td></tr>
+<tr><td><strong>V</strong></td><td class="en">v / letter name V</td></tr>
+<tr><td><strong>W</strong></td><td class="en">w / letter name W</td></tr>
+<tr><td><strong>X</strong></td><td class="en">x / gz-like pattern in some words</td></tr>
+<tr><td><strong>Y</strong></td><td class="en">y / vowel-like contribution in some words</td></tr>
+<tr><td><strong>Z</strong></td><td class="en">z / regional letter-name variants</td></tr>
+</tbody>
+</table>
+
+<div class="box warning">
+<span class="label">Important</span>
+<p>Letter का नाम (<strong>letter name</strong>) और उस letter का किसी word में actual sound (<strong>phonetic sound</strong>) अलग concepts हो सकते हैं। Reading practice करते समय दोनों को अलग पहचानो।</p>
+</div>
+
+<h2>5. Silent Letters</h2>
+
+<p>कुछ English words में letter लिखा जाता है लेकिन pronunciation में वह sound नहीं देता। ऐसे letters को <strong>silent letters</strong> कहा जाता है।</p>
+
+<table>
+<thead><tr><th>Word</th><th>Silent Letter</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>honest</strong></td><td><strong>H</strong></td><td class="hi">ईमानदार</td></tr>
+<tr><td class="en"><strong>hour</strong></td><td><strong>H</strong></td><td class="hi">घंटा</td></tr>
+<tr><td class="en"><strong>honour</strong></td><td><strong>H</strong></td><td class="hi">सम्मान</td></tr>
+<tr><td class="en"><strong>knowledge</strong></td><td><strong>K</strong></td><td class="hi">ज्ञान</td></tr>
+<tr><td class="en"><strong>knife</strong></td><td><strong>K</strong></td><td class="hi">चाकू</td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Reading Habit</span>
+<p>Word को देखकर केवल letters count मत करो। उसका <strong>actual pronunciation</strong> सुनो और फिर बोलो।</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>6. From Letters to Words</h2>
+
 <h3>What Is a Word?</h3>
-<p>Alphabet के बाद अगली learning unit <strong>word</strong> है। Letters तभी meaningful word बनाते हैं जब उनका arrangement सही हो और उनका meaning निकलता हो।</p>
-<div class="box rose"><span class="label">Core Definition</span><p class="formula">A Word = Letters arranged in a meaningful order</p><p class="en"><strong>P-E-N → pen</strong></p><p class="hi">यहाँ letters का arrangement meaningful word बनाता है।</p></div>
-<div class="box coral"><span class="label">Wrong Arrangement</span><p class="en"><strong>N-P-E</strong></p><p class="hi">Letters वही हैं, लेकिन arrangement meaningful English word नहीं बनाता।</p></div>
-<p class="hi">Lecture की analogy: जैसे किसी dish को सही sequence में बनाना पड़ता है, वैसे ही letters का proper arrangement word को meaningful बनाता है।</p>
+<p>Letters का random group word नहीं बनता। Letters का meaningful और proper arrangement होना चाहिए।</p>
 
-<h2>11. From Words to Sentences</h2>
+<div class="box rule">
+<span class="label">Core Idea</span>
+<p class="formula">Correctly Arranged Letters + Meaning = Word</p>
+<p class="en"><strong>P + E + N = PEN</strong></p>
+<p class="hi">PEN का अर्थ है “कलम”।</p>
+</div>
+
+<div class="two">
+<div class="box warning">
+<span class="label">Wrong Arrangement</span>
+<p class="en"><strong>NPE</strong></p>
+<p class="hi">Letters वही हैं, लेकिन meaningful word नहीं बनता।</p>
+</div>
+<div class="box correct">
+<span class="label">Correct Arrangement</span>
+<p class="en"><strong>PEN</strong></p>
+<p class="hi">Proper sequence से meaningful word बनता है।</p>
+</div>
+</div>
+
+<h3>Build English in the Right Sequence</h3>
+<div class="box summary">
+<span class="label">Foundation Chain</span>
+<p class="formula">Alphabet → Word → Sentence → Paragraph → Speech</p>
+</div>
+
+<h2>7. From Words to Sentences</h2>
+
 <h3>What Is a Sentence?</h3>
-<div class="box teal"><span class="label">Core Definition</span><p class="formula">A Sentence = Words arranged in a proper order to express a complete meaning</p><p class="en"><strong>I learn English.</strong></p><p class="hi">मैं अंग्रेजी सीखता हूँ।</p></div>
-<p>Word के बाद next communication unit sentence है। Sequence बिगड़ने पर meaning और grammatical structure दोनों प्रभावित हो सकते हैं।</p>
+<p>Sentence ऐसा group of words है जो proper order में arranged हो और complete meaning देता हो।</p>
 
-<h3>The Complete Learning Ladder</h3>
-<table><thead><tr><th>Level</th><th>Unit</th><th>Lecture Direction</th></tr></thead><tbody>
-<tr><td>1</td><td>Alphabet</td><td>Letters पहचानो।</td></tr>
-<tr><td>2</td><td>Word</td><td>Letters को meaningful arrangement में लगाओ।</td></tr>
-<tr><td>3</td><td>Sentence</td><td>Words को proper sequence में रखकर complete meaning बनाओ।</td></tr>
-<tr><td>4</td><td>Paragraph</td><td>Sentences का connected group।</td></tr>
-<tr><td>5</td><td>Speech</td><td>Multiple ideas को organised spoken form में present करना।</td></tr>
-</tbody></table>
-<div class="box terr"><span class="label">Big Picture</span><p class="formula">Alphabet → Word → Sentence → Paragraph → Speech</p></div>
+<div class="box example">
+<span class="label">Example</span>
+<p class="en"><strong>I learn English.</strong></p>
+<p class="hi">मैं अंग्रेजी सीखता हूँ।</p>
+</div>
 
-<h2>12. Understanding the Subject</h2>
-<h3>Subject = The Leader / Doer of the Sentence</h3>
-<p>Lecture में subject को sentence का leading element बताया गया है। Simple language में, जिस person/thing के बारे में sentence बनाया जा रहा है या जो action/idea को carry करता है, वह subject role में हो सकता है।</p>
-<h3>Singular and Plural Subjects</h3>
-<table><thead><tr><th>Category</th><th>Examples from Lecture</th></tr></thead><tbody>
-<tr><td><strong>Singular</strong></td><td class="en"><strong>He, She, It, Suresh</strong></td></tr>
-<tr><td><strong>Plural</strong></td><td class="en"><strong>We, They, two or more names</strong></td></tr>
-<tr><td><strong>I</strong></td><td class="en"><strong>I</strong> को lecture में अलग याद रखने वाला subject बताया गया है।</td></tr>
-<tr><td><strong>You</strong></td><td class="en"><strong>You</strong> को practical agreement के लिए अलग ध्यान से याद करना useful है।</td></tr>
-</tbody></table>
-<h3>Pronoun Map</h3>
-<div class="grid"><div class="card"><p class="en"><strong>He</strong></p><p class="hi">पुरुष व्यक्ति</p></div><div class="card"><p class="en"><strong>She</strong></p><p class="hi">महिला व्यक्ति</p></div><div class="card"><p class="en"><strong>It</strong></p><p class="hi">वस्तुओं / non-human entities के लिए lecture में दिया गया basic use</p></div><div class="card"><p class="en"><strong>We</strong></p><p class="hi">हम</p></div><div class="card"><p class="en"><strong>They</strong></p><p class="hi">वे</p></div><div class="card"><p class="en"><strong>You</strong></p><p class="hi">तुम / आप</p></div><div class="card"><p class="en"><strong>I</strong></p><p class="hi">मैं</p></div></div>
+<div class="box warning">
+<span class="label">Do Not Randomly Arrange Words</span>
+<p>Sentence में words का order important है। सही words को गलत sequence में रखने से intended meaning वाला sentence नहीं बनता।</p>
+</div>
 
-<h2>13. Understanding the Verb</h2>
-<h3>Verb = Action / State Element</h3>
-<p>Lecture में verb को <strong>क्रिया</strong> कहा गया है। Spoken English learning context में इसे दो major roles में समझाया गया: <strong>Helping Verb</strong> और <strong>Main Verb</strong>.</p>
-<table><thead><tr><th>Type</th><th>Role</th><th>Example</th></tr></thead><tbody>
-<tr><td><strong>Helping Verb</strong></td><td>Sentence में tense/time या grammatical support दिखा सकती है।</td><td class="en"><strong>I am a teacher.</strong> → <strong>I was a teacher.</strong></td></tr>
-<tr><td><strong>Main Verb</strong></td><td>Actual action / work बताती है।</td><td class="en"><strong>I am teaching.</strong> → <strong>teaching</strong> action बताता है।</td></tr>
-</tbody></table>
-<h3>Helping Verb: Time Signal</h3>
-<div class="box rose"><span class="label">Lecture Example</span><p class="en"><strong>I am a teacher.</strong> → Present</p><p class="en"><strong>I was a teacher.</strong> → Past</p><p class="hi">यहाँ helping verb बदलने से time reference बदलता है।</p></div>
-<h3>Main Verb: Actual Action</h3>
-<div class="box teal"><span class="label">Examples</span><p class="en"><strong>I am teaching.</strong> · <strong>I am eating.</strong> · <strong>I am writing.</strong></p><p class="hi">Teaching, eating, writing actual action दिखाने वाले main verbs हैं।</p></div>
+<h3>What Comes After a Sentence?</h3>
+<table>
+<thead><tr><th>Unit</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><strong>Word</strong></td><td class="hi">Meaningful single unit</td></tr>
+<tr><td><strong>Sentence</strong></td><td class="hi">Meaningful sentence structure</td></tr>
+<tr><td><strong>Paragraph</strong></td><td class="hi">Related sentences का organized group</td></tr>
+<tr><td><strong>Speech</strong></td><td class="hi">Multiple ideas को connected spoken form में express करना</td></tr>
+</tbody>
+</table>
 
-<h2>14. Understanding the Object</h2>
-<p>Object वह element हो सकता है जिस पर action किया जा रहा है या जिसके साथ verb का relation बन रहा है। Lecture इसे person, thing या other target of action के रूप में समझाता है।</p>
-<div class="box lav"><span class="label">Basic Sentence Lens</span><p class="formula">Subject + Verb + Object</p><p class="en"><strong>I learn English.</strong></p><p class="hi">I = Subject · learn = Verb · English = Object</p></div>
+<div class="golden">
+<strong>Learning Principle:</strong> Speech से शुरुआत करने से पहले words और sentences पर command बनाना जरूरी है।
+</div>
 
-<h2>15. Different Sentence Patterns Exist</h2>
-<p>Lecture यह भी establish करता है कि English को केवल tense, modal या passive voice तक सीमित नहीं करना चाहिए। अलग sentence constructions में अलग structural behaviour हो सकता है।</p>
-<table><thead><tr><th>Pattern Highlighted</th><th>Example</th><th>Observation</th></tr></thead><tbody>
-<tr><td>Main Verb based</td><td class="en"><strong>I speak English.</strong></td><td>Direct subject + verb + object pattern.</td></tr>
-<tr><td>Be Verb based</td><td class="en"><strong>He is happy.</strong></td><td>Description/state; main action verb नहीं है।</td></tr>
-<tr><td>Imperative</td><td class="en"><strong>Speak English.</strong></td><td>Subject normally expressed नहीं होता।</td></tr>
-<tr><td>Modal</td><td class="en"><strong>You can teach English.</strong></td><td>Modal verb <strong>can</strong> possibility/ability जैसी meaning add करता है।</td></tr>
-</tbody></table>
-<div class="box terr"><span class="label">Learning Insight</span><p>इसलिए English सीखते समय “एक ही formula पूरी English है” वाली सोच से बाहर आना जरूरी है। पहले structural building blocks समझो।</p></div>
+<div class="ornament">✿ ✿ ✿</div>
 
-<h2>16. Three Learning Levels</h2>
-<h3>Level 1 — Words</h3>
-<p>अगर basic vocabulary ही weak है और simple English words पहचानने/बोलने में difficulty है, तो foundation word level से शुरू होती है।</p>
-<div class="box teal"><span class="label">Level 1 Example</span><p class="en"><strong>run</strong> = भागना</p><p class="en"><strong>speak</strong> = बोलना</p><p class="en"><strong>sit</strong> = बैठना</p></div>
-<h3>Level 2 — Sentences</h3>
-<p>Vocabulary आती है, लेकिन Hindi thought को English sentence में convert करना मुश्किल है—यह sentence-building level है।</p>
-<div class="box rose"><span class="label">Level 2 Skill</span><p>Word knowledge को sentence order और grammar structure में convert करना।</p></div>
-<h3>Level 3 — Paragraph / Speech</h3>
-<p>Simple sentences बन जाते हैं, लेकिन connected speaking या किसी topic पर continuous speech देने में difficulty होती है—यह paragraph/speech level है।</p>
-<div class="box lav"><span class="label">Level 3 Skill</span><p class="en"><strong>Tell me something about your family.</strong></p><p class="hi">एक sentence के बजाय connected ideas के साथ बोलना।</p></div>
-<div class="box terr"><span class="label">Self-Assessment</span><ol><li>मुझे basic English words भी weak लगते हैं → <strong>Level 1</strong></li><li>Words आते हैं, sentences translate/build नहीं होते → <strong>Level 2</strong></li><li>Sentences आते हैं, लेकिन paragraph/speech नहीं बनती → <strong>Level 3</strong></li></ol></div>
+<h2>8. Identify Your Current English Level</h2>
 
-<h2>17. Start Speaking from Small Sentences</h2>
-<p>Lecture का practical transition यहाँ आता है: English बोलना शुरू करने के लिए शुरुआत में छोटे, real-life sentences और command-style expressions useful हैं।</p>
-<table><thead><tr><th>Hindi</th><th>English</th><th>Use</th></tr></thead><tbody>
-<tr><td>जाओ</td><td class="en"><strong>Go.</strong></td><td>Basic command</td></tr>
-<tr><td>खाओ</td><td class="en"><strong>Eat.</strong></td><td>Basic command</td></tr>
-<tr><td>लिखो</td><td class="en"><strong>Write.</strong></td><td>Basic command</td></tr>
-<tr><td>पढ़ो</td><td class="en"><strong>Read.</strong> / <strong>Study.</strong></td><td>Context के अनुसार</td></tr>
-<tr><td>सुनो</td><td class="en"><strong>Listen.</strong></td><td>Basic command</td></tr>
-<tr><td>देखो</td><td class="en"><strong>Look.</strong> / <strong>See.</strong></td><td>Context के अनुसार</td></tr>
-</tbody></table>
-<div class="box teal"><span class="label">Speaking Principle</span><p>शुरुआत में “perfect long sentence” की wait मत करो। छोटे useful sentences को daily routine में बोलना speaking habit बनाने का पहला step हो सकता है।</p></div>
+<p>हर learner की difficulty एक जैसी नहीं होती। इसलिए अपनी current problem identify करना सबसे useful first step है।</p>
 
-<h2>18. Build an English-Speaking Environment</h2>
-<h3>Use English Around Real Activities</h3>
-<p>Lecture practical environment बनाने की बात करता है: घर, family या daily routine में छोटे English expressions deliberately use करो।</p>
-<div class="grid"><div class="card"><p class="en"><strong>Go.</strong></p><p class="hi">जाओ।</p></div><div class="card"><p class="en"><strong>Eat.</strong></p><p class="hi">खाओ।</p></div><div class="card"><p class="en"><strong>Write.</strong></p><p class="hi">लिखो।</p></div><div class="card"><p class="en"><strong>Read.</strong></p><p class="hi">पढ़ो।</p></div><div class="card"><p class="en"><strong>Listen.</strong></p><p class="hi">सुनो।</p></div><div class="card"><p class="en"><strong>Look.</strong></p><p class="hi">देखो।</p></div></div>
+<div class="three">
+<div class="card">
+<h4>Level 1</h4>
+<p><strong>Word Foundation</strong></p>
+<p class="hi">Vocabulary कमजोर है, words कम आते हैं या reading में basic words की problem है।</p>
+</div>
+<div class="card">
+<h4>Level 2</h4>
+<p><strong>Sentence Foundation</strong></p>
+<p class="hi">Words समझ आते हैं, लेकिन Hindi से English sentence translate या independently बोलना difficult है।</p>
+</div>
+<div class="card">
+<h4>Level 3</h4>
+<p><strong>Paragraph / Speech</strong></p>
+<p class="hi">Basic words और sentences आते हैं, लेकिन connected speaking या speech देने में difficulty होती है।</p>
+</div>
+</div>
 
-<h2>19. Vocabulary Habit</h2>
-<div class="box lav"><span class="label">Vocabulary Notebook Method</span><ol><li>नया word मिले तो लिखो।</li><li>Hindi meaning लिखो।</li><li>उस word से एक simple sentence बनाओ।</li><li>Sentence को बोलो।</li></ol></div>
-<table><thead><tr><th>Word</th><th>Meaning</th><th>Simple Use</th></tr></thead><tbody>
-<tr><td class="en"><strong>run</strong></td><td>भागना</td><td class="en"><strong>Run.</strong></td></tr>
-<tr><td class="en"><strong>speak</strong></td><td>बोलना</td><td class="en"><strong>Speak English.</strong></td></tr>
-<tr><td class="en"><strong>sit</strong></td><td>बैठना</td><td class="en"><strong>Sit.</strong></td></tr>
-<tr><td class="en"><strong>have</strong></td><td>लेना / रखना / होना — context के अनुसार</td><td class="en"><strong>Have some water.</strong></td></tr>
-</tbody></table>
+<div class="box tip">
+<span class="label">Self-Diagnosis</span>
+<p>अपनी समस्या के सबसे नीचे वाले level से practice शुरू करो। Foundation strong होने पर upper level naturally आसान होता जाता है।</p>
+</div>
 
-<h2>20. Practice System for Lecture 01</h2>
-<h3>Daily Drill</h3>
-<div class="grid"><div class="card"><strong>Drill 01 — Letters</strong><p>26 letters बोलो और capital/small forms revise करो।</p></div><div class="card"><strong>Drill 02 — Sounds</strong><p>5 vowels identify करो और selected words का pronunciation बोलो।</p></div><div class="card"><strong>Drill 03 — Words</strong><p>10 basic verbs चुनो और meanings याद करो।</p></div><div class="card"><strong>Drill 04 — Sentences</strong><p>हर verb से कम-से-कम एक short sentence बनाओ।</p></div><div class="card"><strong>Drill 05 — Structure</strong><p>Sentence में subject और verb पहचानो।</p></div><div class="card"><strong>Drill 06 — Speaking</strong><p>कम-से-कम 5 sentences बिना पढ़े बोलो।</p></div></div>
+<h2>9. The Three Core Parts of a Sentence</h2>
 
-<h3>Transformation Practice</h3>
-<div class="box practice lav"><span class="label">Self-Practice</span><p>नीचे दिए thought को पहले word level, फिर sentence level पर express करने की कोशिश करो:</p><p class="hi">मैं अंग्रेजी सीखता हूँ।</p><p class="en"><strong>I learn English.</strong></p><p class="hi">अब इसी pattern पर अपने 5 sentences बनाओ।</p></div>
+<p>English sentences को समझने के लिए तीन fundamental parts identify करना useful है:</p>
 
-<h2>21. Master Revision Sheet</h2>
-<table><thead><tr><th>Question</th><th>Answer to Remember</th></tr></thead><tbody>
-<tr><td>English alphabet में कितने letters?</td><td class="formula">26</td></tr>
-<tr><td>Vowels कितने?</td><td class="formula">5 — A, E, I, O, U</td></tr>
-<tr><td>Consonants कितने?</td><td class="formula">20</td></tr>
-<tr><td>Special / semi-vowel letter?</td><td class="formula">Y</td></tr>
-<tr><td>Word क्या है?</td><td>Meaningful arrangement of letters.</td></tr>
-<tr><td>Sentence क्या है?</td><td>Properly arranged words expressing complete meaning.</td></tr>
-<tr><td>Subject क्या है?</td><td>Sentence का leading/doer element.</td></tr>
-<tr><td>Verb क्या है?</td><td>Action/state element; lecture में helping और main verb roles बताए गए।</td></tr>
-<tr><td>Helping Verb क्या कर सकती है?</td><td>Time / grammatical support indicate कर सकती है।</td></tr>
-<tr><td>Main Verb क्या बताती है?</td><td>Actual action / work.</td></tr>
-<tr><td>Learning ladder?</td><td class="formula">Alphabet → Word → Sentence → Paragraph → Speech</td></tr>
-<tr><td>Three learner levels?</td><td class="formula">Words → Sentences → Paragraph/Speech</td></tr>
-</tbody></table>
+<div class="badge-grid">
+<div class="badge"><b>Subject</b><span>कर्ता</span></div>
+<div class="badge"><b>Verb</b><span>क्रिया</span></div>
+<div class="badge"><b>Object</b><span>वस्तु / व्यक्ति आदि</span></div>
+</div>
 
-<h2>22. Lecture 01 Homework</h2>
-<div class="box terr"><span class="label">Assignment</span><ol><li>26 letters लिखो और capital + small forms revise करो।</li><li>5 vowels लिखो और 10 words में vowel identify करो।</li><li>5 words खोजो जिनमें silent letter हो।</li><li>10 daily-use verbs लिखो और Hindi meaning दो।</li><li>इन verbs से 10 छोटे English sentences बनाओ।</li><li>अपने level को identify करो: Level 1, Level 2 या Level 3—और reason लिखो।</li></ol></div>
+<h3>Subject</h3>
+<p>Subject वह person, thing या entity है जो sentence में central role निभाती है। इसे <strong>कर्ता</strong> भी कहा जाता है।</p>
 
-<h2>23. Quick Recap</h2>
-<div class="box summary terr"><span class="label">One-Page Recall</span><p class="formula">26 Letters → Written Forms → Vowels / Consonants → Sounds → Words → Sentences → S + V + O → Helping / Main Verb → Learning Levels → Daily Speaking</p><ul><li>English की foundation letters से शुरू होती है।</li><li>Letters की spelling और sound को अलग-अलग समझना जरूरी है।</li><li>Vowels और consonants speech production के अलग articulation patterns से जुड़े हैं।</li><li>एक letter के multiple sounds हो सकते हैं।</li><li>Silent letters pronunciation में important हैं।</li><li>Meaningful letter arrangement से word बनता है।</li><li>Proper word order से sentence बनता है।</li><li>Sentence के structural roles समझने के लिए subject, verb और object basic building blocks हैं।</li><li>Helping verb और main verb के roles अलग हैं।</li><li>Fluency की दिशा में progression word → sentence → paragraph → speech से build होती है।</li><li>Speaking practice छोटे, real-life sentences से शुरू की जा सकती है।</li></ul></div>
+<h4>Singular and Plural Subjects</h4>
+<table>
+<thead><tr><th>Category</th><th>Common Subjects</th><th>Basic Idea</th></tr></thead>
+<tbody>
+<tr><td><strong>Singular</strong></td><td class="en">he, she, it, one name</td><td class="hi">एक व्यक्ति / वस्तु / नाम</td></tr>
+<tr><td><strong>Plural</strong></td><td class="en">we, they, two or more names</td><td class="hi">एक से अधिक</td></tr>
+<tr><td><strong>Special</strong></td><td class="en">I, you</td><td class="hi">इनको अलग से याद करके practice करना useful है।</td></tr>
+</tbody>
+</table>
 
-<div class="box rose"><span class="label">Final Takeaway</span><p class="en"><strong>Do not rush to advanced English before your foundation becomes clear.</strong></p><p class="hi">पहले basics को इतना clear करो कि आगे आने वाला हर topic उसी foundation पर naturally समझ में आए।</p></div>
+<h4>Pronoun Basics</h4>
+<table>
+<thead><tr><th>Pronoun</th><th>Basic Reference</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><strong>He</strong></td><td class="hi">पुरुष / लड़का</td><td class="en"><strong>He is a businessman.</strong></td></tr>
+<tr><td><strong>She</strong></td><td class="hi">महिला / लड़की</td><td class="en"><strong>She is a teacher.</strong></td></tr>
+<tr><td><strong>It</strong></td><td class="hi">वस्तु / जानवर आदि के लिए</td><td class="en"><strong>It is a bottle.</strong></td></tr>
+<tr><td><strong>We</strong></td><td class="hi">हम</td><td class="en"><strong>We are ready.</strong></td></tr>
+<tr><td><strong>They</strong></td><td class="hi">वे</td><td class="en"><strong>They are students.</strong></td></tr>
+<tr><td><strong>You</strong></td><td class="hi">तुम / आप</td><td class="en"><strong>You are kind.</strong></td></tr>
+<tr><td><strong>I</strong></td><td class="hi">मैं</td><td class="en"><strong>I am ready.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>Verb</h3>
+<p>Verb sentence में action या state को represent करती है। Lesson में इसे मुख्यतः दो parts में समझाया गया:</p>
+
+<div class="grid">
+<div class="box example">
+<span class="label">Helping Verb</span>
+<p>Helping Verb sentence में tense/time या grammatical support दे सकती है।</p>
+<p class="en"><strong>I am a teacher.</strong><br><strong>I was a teacher.</strong></p>
+<p class="hi">यहाँ <strong>am</strong> present को और <strong>was</strong> past को indicate करता है।</p>
+</div>
+<div class="box example">
+<span class="label">Main Verb</span>
+<p>Main Verb actual action/work बताती है।</p>
+<p class="en"><strong>I am teaching.</strong></p>
+<p class="hi">यहाँ <strong>teaching</strong> बताता है कि action क्या है।</p>
+</div>
+</div>
+
+<h3>Object</h3>
+<p>Object वह person, thing या entity हो सकता है जिस पर action directed हो। इसका exact form sentence के context पर depend करता है।</p>
+
+<div class="box example">
+<span class="label">Example</span>
+<p class="en"><strong>I write a letter.</strong></p>
+<p class="hi">I = Subject &nbsp; | &nbsp; write = Verb &nbsp; | &nbsp; a letter = Object</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>10. Major Sentence Patterns</h2>
+
+<table>
+<thead><tr><th>Pattern</th><th>Example</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Subject + Verb + Object</strong></td>
+<td class="en"><strong>I speak English.</strong></td>
+<td class="hi">Direct action sentence</td>
+</tr>
+<tr>
+<td><strong>Subject + Be Verb + Description</strong></td>
+<td class="en"><strong>He is happy.</strong></td>
+<td class="hi">State / description</td>
+</tr>
+<tr>
+<td><strong>Imperative</strong></td>
+<td class="en"><strong>Speak English.</strong></td>
+<td class="hi">Command / instruction</td>
+</tr>
+<tr>
+<td><strong>Modal Pattern</strong></td>
+<td class="en"><strong>You can teach English.</strong></td>
+<td class="hi">Ability / possibility type expression</td>
+</tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">Big Picture</span>
+<p>English को केवल <strong>tense + grammar</strong> के रूप में नहीं देखना है। Sentence structure, vocabulary, pronunciation और speaking practice — ये सभी foundation का हिस्सा हैं।</p>
+</div>
+
+<h2>11. Start Speaking with Small Sentences</h2>
+
+<p>Speaking शुरू करने के लिए छोटे, daily-use verbal expressions useful हैं। पहले one-word commands से शुरुआत की जा सकती है, फिर इन्हें complete phrases में expand किया जा सकता है।</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th><th>Use</th></tr></thead>
+<tbody>
+<tr><td>जाओ</td><td class="en"><strong>Go.</strong></td><td class="hi">Basic command</td></tr>
+<tr><td>खाओ</td><td class="en"><strong>Eat.</strong></td><td class="hi">Basic command</td></tr>
+<tr><td>लिखो</td><td class="en"><strong>Write.</strong></td><td class="hi">Basic command</td></tr>
+<tr><td>पढ़ो</td><td class="en"><strong>Read / Study.</strong></td><td class="hi">Sense के अनुसार</td></tr>
+<tr><td>सुनो</td><td class="en"><strong>Listen.</strong></td><td class="hi">Instruction</td></tr>
+<tr><td>देखो</td><td class="en"><strong>Look / See.</strong></td><td class="hi">Context के अनुसार</td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Speaking Habit</span>
+<p>घर, office या daily routine में छोटे English commands को naturally use करना शुरू करो। Goal पहले <strong>perfect long sentences</strong> नहीं, बल्कि <strong>English में शुरुआत करना</strong> है।</p>
+</div>
+
+<h3>Daily Verb Target</h3>
+<p>Vocabulary growth के लिए रोज़ verbs सीखने और उन्हें sentences में use करने की practice की गई है। केवल meaning नहीं, verb forms और real usage भी साथ में याद करना useful है।</p>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>12. Useful Speaking Pattern: Have</h2>
+
+<h3>Have for “लीजिए”</h3>
+<div class="box rule">
+<span class="label">Pattern</span>
+<p class="formula">Have + Object</p>
+<p>जब किसी को कोई चीज offer करते समय “लीजिए” कहना हो, lesson में <strong>Have</strong> pattern practice किया गया है।</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>पानी लीजिए।</td><td class="en"><strong>Have water.</strong></td></tr>
+<tr><td>कुछ फल लीजिए।</td><td class="en"><strong>Have some fruits.</strong></td></tr>
+<tr><td>कुर्सी लीजिए।</td><td class="en"><strong>Have a chair.</strong></td></tr>
+<tr><td>कुछ मिठाई लीजिए।</td><td class="en"><strong>Have some sweets.</strong></td></tr>
+<tr><td>थोड़ा ब्रेक लीजिए।</td><td class="en"><strong>Have some break.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Create Your Own</span>
+<p class="formula">Have + some + noun</p>
+<p class="en"><strong>Have some water.</strong> &nbsp; <strong>Have some fruits.</strong></p>
+</div>
+
+<h2>13. Useful Speaking Pattern: Give Me</h2>
+
+<h3>Ask for Something Politely</h3>
+<div class="box rule">
+<span class="label">Pattern</span>
+<p class="formula">Give me + Object</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मुझे पानी दीजिए।</td><td class="en"><strong>Give me water.</strong></td></tr>
+<tr><td>मुझे आपका फोन दीजिए।</td><td class="en"><strong>Give me your phone.</strong></td></tr>
+<tr><td>मुझे एक मौका दीजिए।</td><td class="en"><strong>Give me a chance.</strong></td></tr>
+<tr><td>मुझे थोड़ा समय दीजिए।</td><td class="en"><strong>Give me some time.</strong></td></tr>
+<tr><td>मुझे किताब दीजिए।</td><td class="en"><strong>Give me a book.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Structure Insight</span>
+<p>Hindi में sentence लंबा लग सकता है, लेकिन English pattern को छोटे blocks में सोचो:</p>
+<p class="formula">Give me → Object</p>
+</div>
+
+<h2>14. Useful Speaking Pattern: Bring</h2>
+
+<h3>Talk About Bringing Things</h3>
+<div class="box rule">
+<span class="label">Pattern</span>
+<p class="formula">Bring + Object</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>कुर्सी लाओ।</td><td class="en"><strong>Bring a chair.</strong></td></tr>
+<tr><td>चाबी लाओ।</td><td class="en"><strong>Bring the key.</strong></td></tr>
+<tr><td>अपना बैग लाओ।</td><td class="en"><strong>Bring your bag.</strong></td></tr>
+<tr><td>फाइल लाओ।</td><td class="en"><strong>Bring the file.</strong></td></tr>
+<tr><td>कुछ फल लाओ।</td><td class="en"><strong>Bring some fruits.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">Three Starter Patterns</span>
+<p class="formula">Have + Object</p>
+<p class="formula">Give me + Object</p>
+<p class="formula">Bring + Object</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>15. Essential Verb Practice</h2>
+
+<p>Speaking में verbs की strong vocabulary बहुत important है। इसलिए verbs को meaning के साथ-साथ <strong>second form</strong> और <strong>third form</strong> के साथ practice किया गया है।</p>
+
+<table>
+<thead><tr><th>V1</th><th>Hindi Meaning</th><th>V2</th><th>V3</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>play</strong></td><td class="hi">खेलना</td><td class="en">played</td><td class="en">played</td></tr>
+<tr><td class="en"><strong>talk</strong></td><td class="hi">बात करना</td><td class="en">talked</td><td class="en">talked</td></tr>
+<tr><td class="en"><strong>walk</strong></td><td class="hi">चलना</td><td class="en">walked</td><td class="en">walked</td></tr>
+<tr><td class="en"><strong>cook</strong></td><td class="hi">पकाना</td><td class="en">cooked</td><td class="en">cooked</td></tr>
+<tr><td class="en"><strong>watch</strong></td><td class="hi">देखना</td><td class="en">watched</td><td class="en">watched</td></tr>
+<tr><td class="en"><strong>call</strong></td><td class="hi">बुलाना / फोन करना</td><td class="en">called</td><td class="en">called</td></tr>
+<tr><td class="en"><strong>visit</strong></td><td class="hi">भेंट करना / मिलना</td><td class="en">visited</td><td class="en">visited</td></tr>
+<tr><td class="en"><strong>clean</strong></td><td class="hi">साफ करना</td><td class="en">cleaned</td><td class="en">cleaned</td></tr>
+<tr><td class="en"><strong>jump</strong></td><td class="hi">कूदना</td><td class="en">jumped</td><td class="en">jumped</td></tr>
+<tr><td class="en"><strong>study</strong></td><td class="hi">पढ़ाई करना</td><td class="en">studied</td><td class="en">studied</td></tr>
+</tbody>
+</table>
+
+<h3>Regular Verb Pattern</h3>
+<div class="box rule">
+<span class="label">Pattern</span>
+<p class="formula">Regular Verb → usually takes -ed for V2 / V3</p>
+<p>जैसे: <strong>talk → talked → talked</strong></p>
+</div>
+
+<h3>Spelling Pattern: Study</h3>
+<div class="box tip">
+<span class="label">Special Spelling Practice</span>
+<p class="formula">study → studied</p>
+<p>Verb के अंत में <strong>y</strong> होने पर इस pattern में <strong>y</strong> हटाकर <strong>ied</strong> लगाया जाता है।</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>16. Build an English Environment</h2>
+
+<p>English केवल पढ़ने से नहीं, regular use से active होती है। Daily life के छोटे actions को English में बोलने की आदत बनाना speaking confidence के लिए useful है।</p>
+
+<div class="grid">
+<div class="card"><h4>At Home</h4><p class="en"><strong>Bring the water.</strong><br><strong>Give me the book.</strong><br><strong>Have some fruits.</strong></p></div>
+<div class="card"><h4>At Work</h4><p class="en"><strong>Bring the file.</strong><br><strong>Give me some time.</strong><br><strong>Write this.</strong></p></div>
+<div class="card"><h4>Daily Routine</h4><p class="en"><strong>Wake up.</strong><br><strong>Study.</strong><br><strong>Listen.</strong></p></div>
+<div class="card"><h4>With Friends</h4><p class="en"><strong>Come.</strong><br><strong>Go.</strong><br><strong>Speak.</strong></p></div>
+</div>
+
+<div class="box tip">
+<span class="label">Practice Principle</span>
+<p>एक familiar Hindi action को identify करो और उसी moment पर उसका छोटा English expression बोलो। इससे English धीरे-धीरे passive knowledge से active speaking में आने लगती है।</p>
+</div>
+
+<h2>17. Practice Framework</h2>
+
+<h3>One Word → One Phrase → One Sentence</h3>
+
+<table>
+<thead><tr><th>Stage</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Word</strong></td><td class="en"><strong>Bring</strong></td></tr>
+<tr><td><strong>Phrase</strong></td><td class="en"><strong>Bring the file.</strong></td></tr>
+<tr><td><strong>Sentence</strong></td><td class="en"><strong>Bring the file to my desk.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>Verb Expansion Drill</h3>
+<div class="box practice">
+<span class="label">Daily Drill</span>
+<ol>
+<li>एक verb चुनो।</li>
+<li>उसका Hindi meaning लिखो।</li>
+<li>V2 और V3 लिखो।</li>
+<li>उस verb से कम-से-कम 3 छोटे sentences बनाओ।</li>
+<li>हर sentence को ज़ोर से बोलो।</li>
+</ol>
+</div>
+
+<h3>Sentence Analysis Drill</h3>
+<div class="box example">
+<span class="label">Model</span>
+<p class="en"><strong>I am teaching English.</strong></p>
+<p>Subject → <strong>I</strong></p>
+<p>Helping Verb → <strong>am</strong></p>
+<p>Main Verb → <strong>teaching</strong></p>
+<p>Object → <strong>English</strong></p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>18. Homework</h2>
+
+<div class="box practice">
+<span class="label">Vocabulary Notebook</span>
+<p>ऊपर दी गई 10 verbs के लिए:</p>
+<ol>
+<li>Hindi meaning लिखो।</li>
+<li>V1, V2 और V3 लिखो।</li>
+<li>हर verb से एक simple sentence बनाओ।</li>
+</ol>
+</div>
+
+<div class="box practice">
+<span class="label">Speaking Homework</span>
+<p>अपने घर या daily routine से कम-से-कम <strong>10 छोटे English expressions</strong> तैयार करो। शुरुआत command/action words से करो।</p>
+<p class="en"><strong>Go. Eat. Write. Read. Listen. Look. Bring the bag. Give me water.</strong></p>
+</div>
+
+<div class="box practice">
+<span class="label">Foundation Writing</span>
+<p>अपने परिवार या अपने daily routine के बारे में छोटे English sentences लिखो। पहले words की list बनाओ, फिर sentences arrange करो, और अंत में connected paragraph बनाने की कोशिश करो।</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>19. Master Revision Sheet</h2>
+
+<table>
+<thead><tr><th>Concept</th><th>Remember This</th></tr></thead>
+<tbody>
+<tr><td>Alphabet</td><td class="formula">26 letters</td></tr>
+<tr><td>Written Forms</td><td class="formula">Small / Capital / Cursive</td></tr>
+<tr><td>Vowels</td><td class="formula">A, E, I, O, U</td></tr>
+<tr><td>Consonants</td><td class="formula">20 letters</td></tr>
+<tr><td>Semi-Vowel</td><td class="formula">Y</td></tr>
+<tr><td>Sound Production</td><td class="formula">Airflow → Vocal Cords → Articulation → Sound</td></tr>
+<tr><td>Word</td><td class="formula">Meaningful arrangement of letters</td></tr>
+<tr><td>Sentence</td><td class="formula">Meaningful words in proper sequence</td></tr>
+<tr><td>Learning Ladder</td><td class="formula">Word → Sentence → Paragraph → Speech</td></tr>
+<tr><td>Core Parts</td><td class="formula">Subject → Verb → Object</td></tr>
+<tr><td>Helping Verb</td><td class="formula">Grammatical / time support</td></tr>
+<tr><td>Main Verb</td><td class="formula">Action / work</td></tr>
+<tr><td>Have Pattern</td><td class="formula">Have + Object</td></tr>
+<tr><td>Give Me Pattern</td><td class="formula">Give me + Object</td></tr>
+<tr><td>Bring Pattern</td><td class="formula">Bring + Object</td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">The Whole Foundation in One View</span>
+<p class="formula">Understand Letters</p>
+<p>↓</p>
+<p class="formula">Understand Sounds</p>
+<p>↓</p>
+<p class="formula">Build Words</p>
+<p>↓</p>
+<p class="formula">Build Sentences</p>
+<p>↓</p>
+<p class="formula">Understand Subject + Verb + Object</p>
+<p>↓</p>
+<p class="formula">Practice Daily Verbs</p>
+<p>↓</p>
+<p class="formula">Speak Small Sentences</p>
+<p>↓</p>
+<p class="formula">Connect Sentences into Paragraphs</p>
+<p>↓</p>
+<p class="formula">Develop Fluency</p>
+</div>
+
+<div class="golden">
+<strong>Final Takeaway:</strong> English को एक साथ पूरी language की तरह याद करने की कोशिश मत करो। उसे छोटे building blocks में सीखो — <strong>letters, sounds, words, sentences और connected speech</strong>। Foundation जितनी clear होगी, आगे की English उतनी natural लगेगी।
+</div>
+
 <div class="footer">MADE BY HARSHAL CHAUHAN</div>
-</body></html>
+
+</body>
+</html>
