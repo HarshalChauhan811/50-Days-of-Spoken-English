@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 02 — Imperative Sentences: Basic to Advanced</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@page{size:A4 portrait;margin:0;
+  @top-right-corner{content:"Harshal Chauhan";font:8px 'Poppins',sans-serif;color:#9E9E9E;opacity:.3}
+}
+*{box-sizing:border-box}
+body{
+  padding:15mm 14mm 14mm 18mm;margin:0;
+  background:#FEFAF6;color:#2C2C2C;font-family:'Poppins',sans-serif;
+  font-size:10.5px;line-height:1.5;
+  -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  background-image:linear-gradient(to bottom,rgba(0,0,0,.028) 1px,transparent 1px);
+  background-size:100% 26px;
+}
+h1{font-size:31px;line-height:1.12;color:#5B2E3A;margin:0 0 10px;border-bottom:3px solid #2A7F7F;padding-bottom:7px;letter-spacing:-.3px}
+h2{font-size:19px;line-height:1.2;color:#2A7F7F;margin:19px 0 8px;border-bottom:2px solid #2A7F7F;padding-bottom:4px}
+h3{font-size:15px;line-height:1.25;color:#D36B46;margin:14px 0 6px}
+h4{font-size:11.5px;color:#6B5B7A;text-transform:uppercase;letter-spacing:.55px;margin:10px 0 5px}
+p{margin:5px 0}
+.lead{font-size:12.2px;line-height:1.62;color:#3D3D3D}
+.en{font-size:11.3px;font-weight:500;color:#1C1C1C}.en strong{font-weight:700}
+.hi{font-size:10px;font-style:italic;color:#666}
+.formula{font-size:12px;font-weight:700;color:#5B2E3A}
+.box{padding:9px 12px;margin:8px 0;border-radius:0 10px 10px 0;background:#fff;border-left:4px solid;box-shadow:0 1px 4px rgba(0,0,0,.035);break-inside:avoid}
+.rule{border-left-color:#5B2E3A;background:#FDF8F8}.rule .label{color:#5B2E3A}
+.example{border-left-color:#2A7F7F;background:#F5FBFB}.example .label{color:#2A7F7F}
+.tip{border-left-color:#2A7F7F;background:#F5FBFB}.tip .label{color:#2A7F7F}
+.practice{border-left-color:#6B5B7A;background:#F8F7FB}.practice .label{color:#6B5B7A}
+.summary{border-left-color:#D36B46;background:#FEF8F3}.summary .label{color:#D36B46}
+.warning{border-left-color:#C25A3C;background:#FEF4F2}.warning .label{color:#C25A3C}
+.label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+.key{background:#FFF3E6;border:1px solid #F0C9A0;color:#D36B46;border-radius:4px;padding:1px 5px;font-weight:700}
+table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #E2D8D0;border-radius:10px;overflow:hidden;margin:9px 0;background:#fff;break-inside:avoid}
+th{background:#F9F3EC;color:#5B2E3A;font-size:9.5px;padding:6px 8px;text-align:left;border-bottom:2px solid #D36B46}
+td{font-size:9.3px;padding:6px 8px;border-bottom:1px solid #EEE5DD;vertical-align:top}
+tr:last-child td{border-bottom:none}tr:nth-child(even) td{background:#FEFAF6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.card{background:#fff;border:1px solid #E2D8D0;border-radius:10px;padding:8px 9px;break-inside:avoid}
+.card p{margin:3px 0}
+.badges{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.badge{text-align:center;background:#fff;border:1px solid #E2D8D0;border-radius:9px;padding:6px 3px;font-weight:600;color:#5B2E3A}
+.ornament{text-align:center;color:#C8B6A6;font-size:14px;letter-spacing:5px;margin:14px 0;break-inside:avoid}
+ul,ol{margin:4px 0;padding-left:18px}li{margin:2px 0}
+.flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;align-items:center}
+.flow div{background:#fff;border:1px solid #E2D8D0;border-radius:8px;padding:6px 3px;text-align:center;font-weight:600;color:#5B2E3A}
+.footer{margin-top:22px;border-top:1px solid #E2D8D0;padding-top:15px;text-align:center;color:#7A7A7A;font-size:9px;font-weight:500;letter-spacing:1px}
+hr{border:0}
+</style>
+</head>
+<body>
+
+<h1>Imperative Sentences — Basic to Advanced</h1>
+
+<p class="lead">
+Daily English बोलना शुरू करने के लिए सबसे practical जगह है <strong>Imperative Sentences</strong>—ऐसे sentences जिनसे हम किसी को काम करने, न करने, आदेश मानने, सलाह लेने या विनम्र request करने के लिए कहते हैं।
+</p>
+
+<div class="box summary">
+<span class="label">Core Learning Path</span>
+<div class="flow">
+<div>Daily Words</div><div>Verb</div><div>Imperative</div><div>Polite Request</div><div>Negative</div><div>Advanced Forms</div>
+</div>
+</div>
+
+<h2>1. Start Speaking with Real-Life Actions</h2>
+
+<p>Speaking की शुरुआत बड़े speeches से नहीं, बल्कि रोज़मर्रा में बोले जाने वाले छोटे actions से करो।</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>Natural English</th><th>Key Verb / Phrase</th></tr></thead>
+<tbody>
+<tr><td>उठो</td><td class="en"><strong>Wake up.</strong> / <strong>Get up.</strong></td><td>wake up / get up</td></tr>
+<tr><td>ब्रश कर लो</td><td class="en"><strong>Brush your teeth.</strong></td><td>brush</td></tr>
+<tr><td>चाय पी लो</td><td class="en"><strong>Have tea.</strong></td><td>have</td></tr>
+<tr><td>नहा लो</td><td class="en"><strong>Take a bath.</strong></td><td>take</td></tr>
+<tr><td>तैयार हो जाओ</td><td class="en"><strong>Get ready.</strong></td><td>get</td></tr>
+</tbody>
+</table>
+
+<h3>Wake Up vs Get Up</h3>
+<div class="two"></div>
+<div class="grid">
+<div class="box example">
+<span class="label">Wake Up</span>
+<p class="en"><strong>Wake up.</strong></p>
+<p>नींद से जागना, consciousness में आना या आँखें खोलना।</p>
+</div>
+<div class="box example">
+<span class="label">Get Up</span>
+<p class="en"><strong>Get up.</strong></p>
+<p>जागे हुए/लेटे या बैठे व्यक्ति का अपने स्थान से उठ खड़ा होना।</p>
+</div>
+</div>
+
+<div class="box tip">
+<span class="label">Speaking Principle</span>
+<p>Language को रटने के बजाय यह समझो कि <strong>किस situation में कौन-सा expression naturally use होगा</strong>।</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>2. What Are Imperative Sentences?</h2>
+
+<p>जब किसी से <strong>काम करने, आदेश मानने, सलाह लेने, request करने</strong> या instruction follow करने के लिए कहा जाता है, तो उस तरह के sentences को Imperative Sentences कहा जाता है।</p>
+
+<div class="box rule">
+<span class="label">Basic Structure</span>
+<p class="formula">Verb (V1) + Object / Complement</p>
+<p class="hi">Imperative sentence में subject सामान्यतः openly लिखा नहीं जाता; sentence सीधे verb से शुरू हो सकता है।</p>
+</div>
+
+<h3>Recognise the Pattern</h3>
+<div class="grid">
+<div class="card"><p class="en"><strong>Bring water.</strong></p><p class="hi">पानी लाओ।</p></div>
+<div class="card"><p class="en"><strong>Prepare tea.</strong></p><p class="hi">चाय तैयार करो।</p></div>
+<div class="card"><p class="en"><strong>Prepare breakfast.</strong></p><p class="hi">नाश्ता तैयार करो।</p></div>
+<div class="card"><p class="en"><strong>Switch on the TV.</strong></p><p class="hi">टीवी चालू करो।</p></div>
+<div class="card"><p class="en"><strong>Cook the food.</strong></p><p class="hi">खाना पकाओ।</p></div>
+<div class="card"><p class="en"><strong>Close the door.</strong></p><p class="hi">दरवाज़ा बंद करो।</p></div>
+</div>
+
+<h3>Verb First, Object Later</h3>
+<div class="box rule">
+<span class="label">Build It This Way</span>
+<p class="formula">Bring + water → Bring water.</p>
+<p class="formula">Prepare + tea → Prepare tea.</p>
+<p class="formula">Cook + food → Cook the food.</p>
+</div>
+
+<h3>Why the Object Comes After the Verb</h3>
+<p>Hindi sentence में “पानी” वस्तु है और “लाओ” action है। Imperative structure में पहले action (verb) आता है, उसके बाद object।</p>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>3. Practical Command Vocabulary</h2>
+
+<p>Daily life में Imperative Sentences की संख्या बहुत ज्यादा होती है। एक practical learner को अपने routine के actions को English में बोलना शुरू करना चाहिए।</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>कुर्सी लाओ।</td><td class="en"><strong>Bring a chair.</strong></td></tr>
+<tr><td>कुर्सी सीधी करो।</td><td class="en"><strong>Straighten the chair.</strong></td></tr>
+<tr><td>कपड़े पहनो।</td><td class="en"><strong>Wear your clothes.</strong></td></tr>
+<tr><td>दरवाज़ा लगाओ।</td><td class="en"><strong>Close the door.</strong></td></tr>
+<tr><td>दरवाज़ा बंद करो।</td><td class="en"><strong>Close the door.</strong></td></tr>
+<tr><td>पानी लाओ।</td><td class="en"><strong>Bring water.</strong></td></tr>
+<tr><td>पानी की बोतल भरो।</td><td class="en"><strong>Fill the water bottle.</strong></td></tr>
+<tr><td>खाने से पहले हाथ धोओ।</td><td class="en"><strong>Wash your hands before eating.</strong></td></tr>
+<tr><td>किताब टेबल पर रखो।</td><td class="en"><strong>Put the book on the table.</strong></td></tr>
+<tr><td>बैठ जाओ।</td><td class="en"><strong>Sit down.</strong></td></tr>
+<tr><td>खड़े हो जाओ।</td><td class="en"><strong>Stand up.</strong></td></tr>
+<tr><td>खिड़की खोलो।</td><td class="en"><strong>Open the window.</strong></td></tr>
+<tr><td>एसी चालू करो।</td><td class="en"><strong>Turn on the AC.</strong></td></tr>
+<tr><td>राजू को बुलाओ।</td><td class="en"><strong>Call Raju.</strong></td></tr>
+<tr><td>तेज़ भागो।</td><td class="en"><strong>Run fast.</strong></td></tr>
+<tr><td>अंग्रेजी सीखो।</td><td class="en"><strong>Learn English.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">The Main Shortcut</span>
+<p class="formula">Hindi command → Find the action → Put the Verb first → Add the remaining information.</p>
+</div>
+
+<h2>4. Do Not Memorize — Understand the Pattern</h2>
+
+<p>100 sentences याद कर लेना और language को समझना दो अलग बातें हैं। Language में goal यह होना चाहिए कि नई situation आने पर भी तुम खुद sentence बना सको।</p>
+
+<div class="box warning">
+<span class="label">Avoid Rote Learning</span>
+<p><strong>Sentence याद करना useful है, लेकिन sentence-building ability ज्यादा important है.</strong> एक verb को meaning के साथ सीखो और उसी verb से कई sentences बनाओ।</p>
+</div>
+
+<h2>5. Advanced Imperatives</h2>
+
+<p>Basic command में केवल verb + object होता है। थोड़ा बड़ा और अधिक natural sentence बनाने के लिए time, place, adverb या extra information add की जा सकती है।</p>
+
+<table>
+<thead><tr><th>Basic</th><th>Expanded / Advanced</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>Focus.</strong></td><td class="en"><strong>Focus on your work.</strong></td></tr>
+<tr><td class="en"><strong>Clean.</strong></td><td class="en"><strong>Clean your room.</strong></td></tr>
+<tr><td class="en"><strong>Learn English.</strong></td><td class="en"><strong>Learn English fast.</strong></td></tr>
+<tr><td class="en"><strong>Call me.</strong></td><td class="en"><strong>Call me at 10 o'clock.</strong></td></tr>
+<tr><td class="en"><strong>Help.</strong></td><td class="en"><strong>Always help the poor.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>A Stronger Expression</h3>
+<div class="box example">
+<span class="label">Natural / Strong Expression</span>
+<p class="en"><strong>Mind your own business.</strong></p>
+<p class="hi">अपने काम पर ध्यान दो। / अपने काम से मतलब रखो।</p>
+</div>
+
+<h3>Important Vocabulary</h3>
+<table>
+<thead><tr><th>Word</th><th>Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>focus</strong></td><td class="hi">ध्यान देना</td><td class="en"><strong>Focus on your work.</strong></td></tr>
+<tr><td class="en"><strong>criticize</strong></td><td class="hi">बुराई / आलोचना करना</td><td class="en"><strong>Don't criticize others.</strong></td></tr>
+<tr><td class="en"><strong>disturb</strong></td><td class="hi">परेशान करना</td><td class="en"><strong>Don't disturb me.</strong></td></tr>
+<tr><td class="en"><strong>bother</strong></td><td class="hi">परेशान करना</td><td class="en"><strong>Don't bother me.</strong></td></tr>
+<tr><td class="en"><strong>spit</strong></td><td class="hi">थूकना</td><td class="en"><strong>Don't spit on the wall.</strong></td></tr>
+<tr><td class="en"><strong>waste</strong></td><td class="hi">बर्बाद करना</td><td class="en"><strong>Don't waste time.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>6. Polite Requests with Please</h2>
+
+<p>हर situation में direct command natural नहीं लगता। जब किसी से विनम्रता से बात करनी हो, तो <strong>Please</strong> का use किया जाता है।</p>
+
+<div class="box rule">
+<span class="label">Formula</span>
+<p class="formula">Please + Verb (V1) + Object / Complement</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>कृपया मेरी मदद करें।</td><td class="en"><strong>Please help me.</strong></td></tr>
+<tr><td>कृपया मेरे लिए एक कप चाय लाएं।</td><td class="en"><strong>Please bring a cup of tea.</strong></td></tr>
+<tr><td>कृपया लाइन में खड़े हो जाएं।</td><td class="en"><strong>Please stand in line.</strong></td></tr>
+<tr><td>कृपया कार धीरे चलाएं।</td><td class="en"><strong>Please drive slowly.</strong></td></tr>
+<tr><td>कृपया अंग्रेजी में बात करें।</td><td class="en"><strong>Please speak in English.</strong></td></tr>
+<tr><td>कृपया जल्दी आएं।</td><td class="en"><strong>Please come soon.</strong></td></tr>
+<tr><td>कृपया मेरी बात सुनें।</td><td class="en"><strong>Please listen to me.</strong></td></tr>
+<tr><td>कृपया यह काम करें।</td><td class="en"><strong>Please do this work.</strong></td></tr>
+<tr><td>कृपया नमक पास करें।</td><td class="en"><strong>Please pass the salt.</strong></td></tr>
+<tr><td>कृपया खिड़की खोलें।</td><td class="en"><strong>Please open the window.</strong></td></tr>
+<tr><td>कृपया दरवाज़ा खोलें।</td><td class="en"><strong>Please open the door.</strong></td></tr>
+<tr><td>कृपया मेरी तरफ देखें।</td><td class="en"><strong>Please look at me.</strong></td></tr>
+<tr><td>कृपया बैठ जाइए।</td><td class="en"><strong>Please sit down.</strong></td></tr>
+<tr><td>कृपया खड़े हो जाइए।</td><td class="en"><strong>Please stand up.</strong></td></tr>
+<tr><td>कृपया समय पर आएं।</td><td class="en"><strong>Please come on time.</strong></td></tr>
+<tr><td>कृपया यह किताब पढ़ें।</td><td class="en"><strong>Please read this book.</strong></td></tr>
+<tr><td>कृपया मुझे माफ करें।</td><td class="en"><strong>Please forgive me.</strong></td></tr>
+<tr><td>कृपया गेट बंद करें।</td><td class="en"><strong>Please close the gate.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Communication Insight</span>
+<p>एक ही intention अलग tone में बोला जा सकता है। <strong>Direct command</strong> functional है; <strong>polite request</strong> relationship और respect को भी communicate करती है।</p>
+</div>
+
+<h2>7. Negative Imperatives with Don't</h2>
+
+<p>जब किसी को किसी काम को <strong>न करने</strong> के लिए कहा जाता है, तो <strong>Don't</strong> लगाया जाता है। यह <strong>do not</strong> का short form है।</p>
+
+<div class="box rule">
+<span class="label">Formula</span>
+<p class="formula">Don't + Verb (V1) + Object / Complement</p>
+</div>
+
+<h3>Simple Negative Commands</h3>
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>भागो मत।</td><td class="en"><strong>Don't run.</strong></td></tr>
+<tr><td>रोओ मत।</td><td class="en"><strong>Don't cry.</strong></td></tr>
+<tr><td>चिल्लाओ मत।</td><td class="en"><strong>Don't shout.</strong></td></tr>
+<tr><td>खाओ मत।</td><td class="en"><strong>Don't eat.</strong></td></tr>
+<tr><td>सोओ मत।</td><td class="en"><strong>Don't sleep.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>Expanded Negative Commands</h3>
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरा पीछा मत करो।</td><td class="en"><strong>Don't follow me.</strong></td></tr>
+<tr><td>यहां मत बैठो।</td><td class="en"><strong>Don't sit here.</strong></td></tr>
+<tr><td>दीवार पर मत थूको।</td><td class="en"><strong>Don't spit on the wall.</strong></td></tr>
+<tr><td>किसी की बुराई मत करो।</td><td class="en"><strong>Don't criticize others.</strong></td></tr>
+<tr><td>गाली मत दो।</td><td class="en"><strong>Don't abuse.</strong></td></tr>
+<tr><td>समय बर्बाद मत करो।</td><td class="en"><strong>Don't waste time.</strong></td></tr>
+<tr><td>बाहर मत जाओ।</td><td class="en"><strong>Don't go outside.</strong></td></tr>
+<tr><td>झूठ मत बोलो।</td><td class="en"><strong>Don't tell lies.</strong></td></tr>
+<tr><td>उसे मत छुओ।</td><td class="en"><strong>Don't touch it.</strong></td></tr>
+<tr><td>मोबाइल मत चलाओ।</td><td class="en"><strong>Don't use the mobile.</strong></td></tr>
+<tr><td>यह बात मत कहो।</td><td class="en"><strong>Don't say this.</strong></td></tr>
+<tr><td>देर मत करो।</td><td class="en"><strong>Don't be late.</strong></td></tr>
+<tr><td>मुझे परेशान मत करो।</td><td class="en"><strong>Don't bother me.</strong></td></tr>
+<tr><td>अंदर मत आओ।</td><td class="en"><strong>Don't come inside.</strong></td></tr>
+<tr><td>गुस्सा मत करो।</td><td class="en"><strong>Don't be angry.</strong></td></tr>
+<tr><td>उसे मत बुलाओ।</td><td class="en"><strong>Don't call him.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">One-Line Rule</span>
+<p class="formula">“मत” दिखे → Don't → Verb (V1) → Object / Complement</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>8. Negative Requests: Please Don't</h2>
+
+<p>जब किसी काम को रोकना भी हो और tone polite भी रखना हो, तो <strong>Please don't</strong> का use किया जाता है।</p>
+
+<div class="box rule">
+<span class="label">Formula</span>
+<p class="formula">Please + Don't + Verb (V1) + Object</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th><th>New Verb</th></tr></thead>
+<tbody>
+<tr><td>कृपया मेज़ को मत हिलाएं।</td><td class="en"><strong>Please don't shake the table.</strong></td><td class="en">shake = हिलाना</td></tr>
+<tr><td>कृपया सब्जियां मत काटें।</td><td class="en"><strong>Please don't cut the vegetables.</strong></td><td class="en">cut = काटना</td></tr>
+<tr><td>कृपया बटन मत दबाएं।</td><td class="en"><strong>Please don't tap the button.</strong></td><td class="en">tap = हल्के से दबाना</td></tr>
+<tr><td>कृपया पौधों को मत तोड़ें।</td><td class="en"><strong>Please don't pluck the plants.</strong></td><td class="en">pluck = तोड़ना</td></tr>
+<tr><td>कृपया कचरा मत फेंकें।</td><td class="en"><strong>Please don't throw the garbage.</strong></td><td class="en">throw = फेंकना</td></tr>
+</tbody>
+</table>
+
+<h3>Useful Action Vocabulary</h3>
+<table>
+<thead><tr><th>Verb</th><th>Hindi Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>shake</strong></td><td class="hi">हिलाना</td><td class="en"><strong>Shake the table.</strong></td></tr>
+<tr><td class="en"><strong>tap</strong></td><td class="hi">हल्के से दबाना</td><td class="en"><strong>Tap the button.</strong></td></tr>
+<tr><td class="en"><strong>push</strong></td><td class="hi">धक्का देना</td><td class="en"><strong>Push the door.</strong></td></tr>
+<tr><td class="en"><strong>pull</strong></td><td class="hi">खींचना</td><td class="en"><strong>Pull the handle.</strong></td></tr>
+<tr><td class="en"><strong>pluck</strong></td><td class="hi">तोड़ना</td><td class="en"><strong>Pluck the flowers.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>9. Practice That Builds Speaking Ability</h2>
+
+<div class="box practice">
+<span class="label">Practice Loop</span>
+<ol>
+<li>Hindi sentence पढ़ो।</li>
+<li>Action word / Verb पहचानो।</li>
+<li>Verb को English में याद करो।</li>
+<li>Imperative structure लगाओ।</li>
+<li>Sentence ज़ोर से बोलो।</li>
+<li>फिर बिना देखे दोबारा बोलो।</li>
+</ol>
+</div>
+
+<h3>Five-Step Sentence Expansion</h3>
+<table>
+<thead><tr><th>Stage</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Verb</td><td class="en"><strong>Call</strong></td></tr>
+<tr><td>Basic Imperative</td><td class="en"><strong>Call me.</strong></td></tr>
+<tr><td>Polite Request</td><td class="en"><strong>Please call me.</strong></td></tr>
+<tr><td>Negative</td><td class="en"><strong>Don't call me.</strong></td></tr>
+<tr><td>Polite Negative</td><td class="en"><strong>Please don't call me.</strong></td></tr>
+</tbody>
+</table>
+
+<h3>Five More Transformations</h3>
+<div class="grid">
+<div class="card"><p class="en"><strong>Open the door.</strong></p><p class="en"><strong>Please open the door.</strong></p></div>
+<div class="card"><p class="en"><strong>Don't open the door.</strong></p><p class="en"><strong>Please don't open the door.</strong></p></div>
+<div class="card"><p class="en"><strong>Read this book.</strong></p><p class="en"><strong>Please read this book.</strong></p></div>
+<div class="card"><p class="en"><strong>Don't waste time.</strong></p><p class="en"><strong>Please don't waste time.</strong></p></div>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>10. Daily Verb Bank</h2>
+
+<p>एक verb को अकेले याद मत करो। <strong>Meaning + sentence</strong> के साथ practice करो। इससे word active vocabulary में आने की संभावना बढ़ती है।</p>
+
+<table>
+<thead><tr><th>Verb</th><th>Meaning</th><th>Example Sentence</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>run</strong></td><td class="hi">दौड़ना / भागना</td><td class="en"><strong>I run.</strong> / <strong>Don't run.</strong></td></tr>
+<tr><td class="en"><strong>eat</strong></td><td class="hi">खाना</td><td class="en"><strong>I eat food.</strong></td></tr>
+<tr><td class="en"><strong>write</strong></td><td class="hi">लिखना</td><td class="en"><strong>Write a letter.</strong></td></tr>
+<tr><td class="en"><strong>read</strong></td><td class="hi">पढ़ना</td><td class="en"><strong>Read a book.</strong></td></tr>
+<tr><td class="en"><strong>play</strong></td><td class="hi">खेलना</td><td class="en"><strong>Play cricket.</strong></td></tr>
+<tr><td class="en"><strong>jump</strong></td><td class="hi">कूदना</td><td class="en"><strong>Jump from here.</strong></td></tr>
+<tr><td class="en"><strong>sing</strong></td><td class="hi">गाना</td><td class="en"><strong>Sing a song.</strong></td></tr>
+<tr><td class="en"><strong>dance</strong></td><td class="hi">नाचना</td><td class="en"><strong>Munni dances.</strong></td></tr>
+<tr><td class="en"><strong>think</strong></td><td class="hi">सोचना</td><td class="en"><strong>I am thinking.</strong></td></tr>
+<tr><td class="en"><strong>sleep</strong></td><td class="hi">सोना</td><td class="en"><strong>I am sleeping.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Verb Memory Method</span>
+<p><strong>Word → Hindi Meaning → Your Own Sentence → Speak Aloud</strong></p>
+<p>उदाहरण: <strong>jump → कूदना → Jump from here.</strong></p>
+</div>
+
+<h2>11. Master Revision Sheet</h2>
+
+<table>
+<thead><tr><th>Pattern</th><th>Formula</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Basic Imperative</td><td class="formula">V1 + Object</td><td class="en"><strong>Bring water.</strong></td></tr>
+<tr><td>Expanded Imperative</td><td class="formula">V1 + Object + Extra Information</td><td class="en"><strong>Call me at 10 o'clock.</strong></td></tr>
+<tr><td>Polite Request</td><td class="formula">Please + V1 + Object</td><td class="en"><strong>Please help me.</strong></td></tr>
+<tr><td>Negative Imperative</td><td class="formula">Don't + V1 + Object</td><td class="en"><strong>Don't waste time.</strong></td></tr>
+<tr><td>Polite Negative</td><td class="formula">Please + Don't + V1 + Object</td><td class="en"><strong>Please don't shake the table.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">Fast Translation Map</span>
+<p><strong>करो / जाओ / लाओ / पढ़ो</strong> → <span class="key">V1</span></p>
+<p><strong>कृपया करो</strong> → <span class="key">Please + V1</span></p>
+<p><strong>मत करो</strong> → <span class="key">Don't + V1</span></p>
+<p><strong>कृपया मत करो</strong> → <span class="key">Please + Don't + V1</span></p>
+</div>
+
+<h2>12. Final Practice Set</h2>
+
+<div class="box practice">
+<span class="label">Translate into English</span>
+<ol>
+<li>पानी लाओ।</li>
+<li>अपना काम करो।</li>
+<li>जल्दी आओ।</li>
+<li>मोबाइल बंद करो।</li>
+<li>मुझे फोन करो।</li>
+<li>मेरे पीछे मत आओ।</li>
+<li>समय बर्बाद मत करो।</li>
+<li>उसे मत बुलाओ।</li>
+<li>कृपया मेरी मदद करें।</li>
+<li>कृपया यह किताब पढ़ें।</li>
+<li>कृपया मेज़ मत हिलाएं।</li>
+<li>कृपया कचरा मत फेंकें।</li>
+</ol>
+</div>
+
+<div class="box example">
+<span class="label">Self-Check Answers</span>
+<p class="en"><strong>1.</strong> Bring water.</p>
+<p class="en"><strong>2.</strong> Do your work.</p>
+<p class="en"><strong>3.</strong> Come soon.</p>
+<p class="en"><strong>4.</strong> Switch off the mobile.</p>
+<p class="en"><strong>5.</strong> Call me.</p>
+<p class="en"><strong>6.</strong> Don't follow me.</p>
+<p class="en"><strong>7.</strong> Don't waste time.</p>
+<p class="en"><strong>8.</strong> Don't call him.</p>
+<p class="en"><strong>9.</strong> Please help me.</p>
+<p class="en"><strong>10.</strong> Please read this book.</p>
+<p class="en"><strong>11.</strong> Please don't shake the table.</p>
+<p class="en"><strong>12.</strong> Please don't throw the garbage.</p>
+</div>
+
+<h2>13. Homework</h2>
+
+<div class="box practice">
+<span class="label">Speaking Assignment</span>
+<ol>
+<li>अपने daily routine से <strong>10 Imperative Sentences</strong> लिखो।</li>
+<li>उन्हीं 10 sentences को बोलकर record करो।</li>
+<li>कम-से-कम 3 sentences को <strong>Please</strong> के साथ बदलो।</li>
+<li>कम-से-कम 3 sentences को <strong>Don't</strong> के साथ negative बनाओ।</li>
+<li>उनमें से 2 sentences को <strong>Please don't</strong> में बदलो।</li>
+</ol>
+</div>
+
+<div class="box practice">
+<span class="label">Vocabulary Assignment</span>
+<p>आज सीखी गई verbs में से 10 चुनो। प्रत्येक के लिए:</p>
+<p class="formula">Verb → Hindi Meaning → Your Sentence → Speak Twice</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<h2>14. Quick Recap</h2>
+
+<div class="box summary">
+<span class="label">Remember These Rules</span>
+<ul>
+<li>Imperative sentences अक्सर <strong>Verb (V1)</strong> से शुरू होते हैं।</li>
+<li>Basic pattern: <strong>V1 + Object</strong>.</li>
+<li>Daily speaking के लिए commands को real-life situations से सीखो।</li>
+<li><strong>Wake up</strong> = नींद से जागना; <strong>Get up</strong> = अपने स्थान से उठना।</li>
+<li>Polite request के लिए <strong>Please + V1</strong>.</li>
+<li>Negative imperative के लिए <strong>Don't + V1</strong>.</li>
+<li>Polite negative के लिए <strong>Please don't + V1</strong>.</li>
+<li>Sentence बड़ा बनाने के लिए object, place, time या extra information जोड़ सकते हो।</li>
+<li>एक verb को meaning के साथ sentence में use करने से vocabulary ज्यादा useful बनती है।</li>
+<li>Final goal: rule याद करना नहीं, बल्कि situation आते ही sentence बोल पाना है।</li>
+</ul>
+</div>
+
+<div class="golden">
+<strong>Speak First, Expand Next:</strong> पहले छोटा English command बोलो। फिर उसी sentence में object, time, place, politeness या negative form जोड़कर उसे बड़ा करो। यही process basic speaking को धीरे-धीरे fluent expression में बदलती है।
+</div>
+
+<div class="footer">MADE BY HARSHAL CHAUHAN</div>
+</body>
+</html>
