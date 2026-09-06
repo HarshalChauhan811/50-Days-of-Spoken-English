@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 06 — Have & Has</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@page{size:A4 portrait;margin:0}
+*{box-sizing:border-box}
+body{
+  padding:15mm 14mm 14mm 18mm;margin:0;background:#FEFAF6;color:#2C2C2C;
+  font-family:'Poppins',sans-serif;font-size:10.5px;line-height:1.5;
+  -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  background-image:linear-gradient(to bottom,rgba(0,0,0,.028) 1px,transparent 1px);
+  background-size:100% 26px;
+}
+h1{font-size:31px;line-height:1.12;color:#5B2E3A;margin:0 0 10px;border-bottom:3px solid #2A7F7F;padding-bottom:7px;letter-spacing:-.3px}
+h2{font-size:19px;line-height:1.2;color:#2A7F7F;margin:19px 0 8px;border-bottom:2px solid #2A7F7F;padding-bottom:4px}
+h3{font-size:15px;line-height:1.25;color:#D36B46;margin:14px 0 6px}
+p{margin:5px 0}
+.lead{font-size:12.2px;line-height:1.62;color:#3D3D3D}
+.en{font-size:11.3px;font-weight:500;color:#1C1C1C}.en strong{font-weight:700}
+.hi{font-size:10px;font-style:italic;color:#666}
+.formula{font-size:12px;font-weight:700;color:#5B2E3A}
+.box{padding:9px 12px;margin:8px 0;border-radius:0 10px 10px 0;background:#fff;border-left:4px solid;box-shadow:0 1px 4px rgba(0,0,0,.035);break-inside:avoid}
+.rule{border-left-color:#5B2E3A;background:#FDF8F8}.rule .label{color:#5B2E3A}
+.example{border-left-color:#2A7F7F;background:#F5FBFB}.example .label{color:#2A7F7F}
+.tip{border-left-color:#2A7F7F;background:#F5FBFB}.tip .label{color:#2A7F7F}
+.practice{border-left-color:#6B5B7A;background:#F8F7FB}.practice .label{color:#6B5B7A}
+.summary{border-left-color:#D36B46;background:#FEF8F3}.summary .label{color:#D36B46}
+.warning{border-left-color:#C25A3C;background:#FEF4F2}.warning .label{color:#C25A3C}
+.label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #E2D8D0;border-radius:10px;overflow:hidden;margin:9px 0;background:#fff;break-inside:avoid}
+th{background:#F9F3EC;color:#5B2E3A;font-size:9.5px;padding:6px 8px;text-align:left;border-bottom:2px solid #D36B46}
+td{font-size:9.3px;padding:6px 8px;border-bottom:1px solid #EEE5DD;vertical-align:top}
+tr:last-child td{border-bottom:none}tr:nth-child(even) td{background:#FEFAF6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.card{background:#fff;border:1px solid #E2D8D0;border-radius:10px;padding:8px 9px;break-inside:avoid}
+.card p{margin:3px 0}
+.badges{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.badge{text-align:center;background:#fff;border:1px solid #E2D8D0;border-radius:9px;padding:7px 4px;font-weight:600;color:#5B2E3A}
+.ornament{text-align:center;color:#C8B6A6;font-size:14px;letter-spacing:5px;margin:14px 0;break-inside:avoid}
+ul,ol{margin:4px 0;padding-left:18px}li{margin:2px 0}
+.footer{margin-top:22px;border-top:1px solid #E2D8D0;padding-top:15px;text-align:center;color:#7A7A7A;font-size:9px;font-weight:500;letter-spacing:1px}
+.small{font-size:9px;color:#6b6b6b}
+.kbd{display:inline-block;padding:1px 6px;border:1px solid #E2D8D0;border-radius:5px;background:#fff;font-weight:700;color:#5B2E3A}
+</style>
+</head>
+<body>
+
+<h1>Lecture 06 — Have &amp; Has</h1>
+
+<p class="lead">
+Is lecture mein focus hai <strong>have</strong> aur <strong>has</strong> ke practical use par—especially jab humein batana ho ki kisi person ke paas koi cheez hai. Isi concept ko aage <strong>present → past → future</strong>, positive, negative, interrogative, interrogative-negative aur WH-question patterns ke through practise kiya gaya hai.
+</p>
+
+<div class="box summary">
+<span class="label">Lecture Blueprint</span>
+<p class="formula">Have / Has → Possession → Subject Rule → Practice</p>
+<p class="formula">Negative → Do/Does + Not + Have</p>
+<p class="formula">Interrogative → Do/Does + Subject + Have</p>
+<p class="formula">WH → WH + Do/Does + Subject + Have</p>
+<p class="formula">Paragraph Translation → 10 Verbs → Homework</p>
+</div>
+
+<h2>1. Have — Two Important Uses</h2>
+
+<p>Lecture mein <strong>have</strong> ke do basic meanings/examples se शुरुआत कराई गई:</p>
+
+<div class="grid">
+<div class="card">
+<strong>Use 1 — “लीजिए / लें”</strong>
+<p class="hi">Kisi person ko kuch offer ya lene ke sense mein.</p>
+<p class="en"><strong>Have water.</strong></p>
+<p class="en"><strong>Have breakfast.</strong></p>
+</div>
+<div class="card">
+<strong>Use 2 — “पास है”</strong>
+<p class="hi">Kisi person ke paas koi cheez hone ki information.</p>
+<p class="en"><strong>I have time.</strong></p>
+<p class="en"><strong>You have money.</strong></p>
+</div>
+</div>
+
+<div class="box example">
+<span class="label">Simple Spoken Examples</span>
+<p class="en"><strong>Have water.</strong> — पानी लीजिए।</p>
+<p class="en"><strong>Have breakfast.</strong> — नाश्ता कीजिए।</p>
+<p class="en"><strong>Have some patience.</strong> — थोड़ा धैर्य रखिए।</p>
+</div>
+
+<div class="box rule">
+<span class="label">Today's Main Focus</span>
+<p class="formula">Have / Has = “पास है” बताने के लिए</p>
+<p>Jab humein batana ho ki <strong>mere paas, tumhare paas, uske paas, unke paas</strong> kya hai, tab possession wala use important ho jata hai.</p>
+</div>
+
+<h2>2. Have / Had / Will Have — Three Tenses</h2>
+
+<p>Lecture mein isi possession concept ko teen time frames mein connect kiya gaya:</p>
+
+<table>
+<thead><tr><th>Time</th><th>Form</th><th>Example</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>Present</td><td><strong>Have / Has</strong></td><td class="en">I have time.</td><td>मेरे पास समय है।</td></tr>
+<tr><td>Past</td><td><strong>Had</strong></td><td class="en">I had time.</td><td>मेरे पास समय था।</td></tr>
+<tr><td>Future</td><td><strong>Will have</strong></td><td class="en">I will have a car.</td><td>मेरे पास कार होगी।</td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Recall</span>
+<p class="formula">Present → Have / Has &nbsp;&nbsp; | &nbsp;&nbsp; Past → Had &nbsp;&nbsp; | &nbsp;&nbsp; Future → Will Have</p>
+</div>
+
+<h2>3. Present — Have या Has?</h2>
+
+<div class="box rule">
+<span class="label">Master Rule</span>
+<p class="formula">I / We / You / They / Plural → HAVE</p>
+<p class="formula">He / She / It / Name / Singular → HAS</p>
+</div>
+
+<table>
+<thead><tr><th>Subject</th><th>Correct Form</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>I</td><td><strong>have</strong></td><td class="en">I have a car.</td></tr>
+<tr><td>We</td><td><strong>have</strong></td><td class="en">We have power.</td></tr>
+<tr><td>You</td><td><strong>have</strong></td><td class="en">You have money.</td></tr>
+<tr><td>They</td><td><strong>have</strong></td><td class="en">They have weapons.</td></tr>
+<tr><td>He</td><td><strong>has</strong></td><td class="en">He has an iPhone.</td></tr>
+<tr><td>She</td><td><strong>has</strong></td><td class="en">She has a bag.</td></tr>
+<tr><td>It</td><td><strong>has</strong></td><td class="en">It has a problem.</td></tr>
+<tr><td>Ram / Raju / Any singular name</td><td><strong>has</strong></td><td class="en">Raju has a chance.</td></tr>
+</tbody>
+</table>
+
+<div class="badges">
+<div class="badge">I → HAVE</div>
+<div class="badge">We / You → HAVE</div>
+<div class="badge">He / She → HAS</div>
+<div class="badge">Name → HAS</div>
+</div>
+
+<h2>4. Possession — “Mere Paas…”</h2>
+
+<p>Basic idea simple hai: Hindi mein agar sentence mein <strong>“पास”</strong> aa raha hai, toh possession wala <strong>have/has</strong> pattern check karo.</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास कार है।</td><td class="en"><strong>I have a car.</strong></td></tr>
+<tr><td>मेरे पास घर है।</td><td class="en"><strong>I have a house.</strong></td></tr>
+<tr><td>मेरे पास समय है।</td><td class="en"><strong>I have time.</strong></td></tr>
+<tr><td>मेरे पास पैसा है।</td><td class="en"><strong>I have money.</strong></td></tr>
+<tr><td>मेरे पास दिमाग है।</td><td class="en"><strong>I have a mind.</strong></td></tr>
+<tr><td>मेरे पास अंग्रेजी का ज्ञान है।</td><td class="en"><strong>I have English knowledge.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">25-Thing Challenge</span>
+<p>Apne baare mein <strong>25 things</strong> list karo jo tumhare paas hain aur har ek ko English mein bolo.</p>
+<p class="en">I have a mobile. &nbsp;|&nbsp; I have a bike. &nbsp;|&nbsp; I have a good family.</p>
+</div>
+
+<h2>5. More Possession Examples</h2>
+
+<table>
+<thead><tr><th>Hindi Idea</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास मोबाइल है।</td><td class="en"><strong>I have a mobile.</strong></td></tr>
+<tr><td>मेरे पास बहुत सारे कपड़े हैं।</td><td class="en"><strong>I have many pairs of clothes.</strong></td></tr>
+<tr><td>मेरे पास एक अच्छा परिवार है।</td><td class="en"><strong>I have a good family.</strong></td></tr>
+<tr><td>मेरे पास एक बाइक है।</td><td class="en"><strong>I have a bike.</strong></td></tr>
+<tr><td>मेरे पास चार गायें हैं।</td><td class="en"><strong>I have four cows.</strong></td></tr>
+<tr><td>मेरे पास four acres of land है।</td><td class="en"><strong>I have four acres of land.</strong></td></tr>
+<tr><td>मेरे पास चार कुर्सियाँ हैं।</td><td class="en"><strong>I have four chairs.</strong></td></tr>
+<tr><td>मेरे पास कई दोस्त हैं।</td><td class="en"><strong>I have many friends.</strong></td></tr>
+<tr><td>मेरे पास एक जोड़ी चप्पल है।</td><td class="en"><strong>I have one pair of slippers.</strong></td></tr>
+<tr><td>मेरे पास दो जोड़ी जूते हैं।</td><td class="en"><strong>I have two pairs of shoes.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Speaking Practice</span>
+<p>Jo thought mind mein aaye, use English mein bolo. Sirf read karna enough nahi; <strong>speaking practice</strong> zaroori hai.</p>
+</div>
+
+<h2>6. Subject Change — Has vs Have</h2>
+
+<p>Ab subject ko change karke dekho. Isi se actual <strong>has vs have</strong> clarity build hoti hai.</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th><th>Why?</th></tr></thead>
+<tbody>
+<tr><td>उसके पास iPhone है।</td><td class="en"><strong>He has an iPhone.</strong></td><td>He → has</td></tr>
+<tr><td>हमारे पास शक्ति है।</td><td class="en"><strong>We have power.</strong></td><td>We → have</td></tr>
+<tr><td>राजू के पास मौका है।</td><td class="en"><strong>Raju has a chance.</strong></td><td>Name → has</td></tr>
+<tr><td>उनके पास हथियार हैं।</td><td class="en"><strong>They have weapons.</strong></td><td>They → have</td></tr>
+<tr><td>तुम्हारे पास English सीखने का मौका है।</td><td class="en"><strong>You have a chance to learn English.</strong></td><td>You → have</td></tr>
+</tbody>
+</table>
+
+<h2>7. Infinitive — “करने का मौका / समय / पैसा”</h2>
+
+<div class="box rule">
+<span class="label">Key Formula</span>
+<p class="formula">Have/Has + Noun + to + Verb (First Form)</p>
+</div>
+
+<p>Lecture mein thoda higher-level sentence banane ke liye <strong>to + verb's first form</strong> ka use introduce kiya gaya.</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास तुमसे मिलने का मौका है।</td><td class="en"><strong>I have a chance to meet you.</strong></td></tr>
+<tr><td>तुम्हारे पास अमेरिका जाने का मौका है।</td><td class="en"><strong>You have a chance to go to America.</strong></td></tr>
+<tr><td>उसके पास यहाँ रात रुकने का मौका है।</td><td class="en"><strong>He has a chance to stay here at night.</strong></td></tr>
+<tr><td>मेरे पास खर्च करने के लिए पैसा है।</td><td class="en"><strong>I have money to spend.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Big Sentence Strategy</span>
+<p>Jab sentence bada lage, use <strong>2 parts</strong> mein break karo.</p>
+<p class="formula">Part 1: Have/Has + Noun</p>
+<p class="formula">Part 2: to + Verb (First Form) + Remaining Words</p>
+</div>
+
+<h2>8. More Simple Practice</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास एक किताब है।</td><td class="en"><strong>I have a book.</strong></td></tr>
+<tr><td>उसके पास एक मोबाइल है।</td><td class="en"><strong>He has a mobile.</strong></td></tr>
+<tr><td>तुम्हारे पास अच्छा मौका है।</td><td class="en"><strong>You have a good chance.</strong></td></tr>
+<tr><td>उसके पास नया लैपटॉप है।</td><td class="en"><strong>He has a new laptop.</strong></td></tr>
+<tr><td>मेरे पास एक पुराना बैग है।</td><td class="en"><strong>I have an old bag.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Consistency Rule</span>
+<p>English learning mein regularity important hai. Sirf ek din padhkar gap dene se speaking automatic nahi hoti; daily reading + sentence making + speaking practice continue karo.</p>
+</div>
+
+<h2>9. Negative Sentences — Do / Does</h2>
+
+<div class="box rule">
+<span class="label">Negative Formula</span>
+<p class="formula">Subject + Do/Does + NOT + Have + Object</p>
+</div>
+
+<div class="box warning">
+<span class="label">Important Shift</span>
+<p>Jab sentence mein <strong>do/does + not</strong> aa gaya, main verb <strong>have</strong> rahega—even with a singular subject.</p>
+<p class="formula">He has → He does not have</p>
+</div>
+
+<table>
+<thead><tr><th>Subject</th><th>Pattern</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>I / We / You / They</td><td>do not have</td><td class="en"><strong>I do not have time.</strong></td></tr>
+<tr><td>He / She / It / Singular</td><td>does not have</td><td class="en"><strong>He does not have a house.</strong></td></tr>
+</tbody>
+</table>
+
+<h2>10. Common Negative Examples</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास तुम्हारे लिए समय नहीं है।</td><td class="en"><strong>I don't have time for you.</strong></td></tr>
+<tr><td>उनके पास पैसे नहीं हैं।</td><td class="en"><strong>They don't have money.</strong></td></tr>
+<tr><td>हमारे पास तुम्हारा फोन नंबर नहीं है।</td><td class="en"><strong>We don't have your phone number.</strong></td></tr>
+<tr><td>उसके पास खुद का घर नहीं है।</td><td class="en"><strong>He doesn't have his own house.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Shortcut</span>
+<p class="formula">Do not have → don't have</p>
+<p class="formula">Does not have → doesn't have</p>
+</div>
+
+<h2>11. Negative Practice Set</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>Correct English</th></tr></thead>
+<tbody>
+<tr><td>हमारे पास समय नहीं है।</td><td class="en"><strong>We don't have time.</strong></td></tr>
+<tr><td>बच्चों के पास खिलौने नहीं हैं।</td><td class="en"><strong>Children don't have toys.</strong></td></tr>
+<tr><td>उस लड़के के पास बैग नहीं है।</td><td class="en"><strong>That boy doesn't have a bag.</strong></td></tr>
+<tr><td>मेरे दोस्तों के पास टिकट नहीं हैं।</td><td class="en"><strong>My friends don't have tickets.</strong></td></tr>
+<tr><td>उस लड़की के पास जानकारी नहीं है।</td><td class="en"><strong>That girl doesn't have information.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box warning">
+<span class="label">Do / Does Rule</span>
+<p class="formula">I / We / You / They → DO</p>
+<p class="formula">He / She / It / Singular → DOES</p>
+<p>Negative/interrogative mein <strong>does</strong> aane ke baad verb <strong>have</strong> rahega, <strong>has</strong> nahi.</p>
+</div>
+
+<h2>12. More Negative Practice</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>हमारे पास समय नहीं है।</td><td class="en"><strong>We don't have time.</strong></td></tr>
+<tr><td>बच्चों के पास खिलौने नहीं हैं।</td><td class="en"><strong>Children don't have toys.</strong></td></tr>
+<tr><td>उस लड़के के पास बैग नहीं है।</td><td class="en"><strong>That boy doesn't have a bag.</strong></td></tr>
+<tr><td>मेरे दोस्तों के पास टिकट नहीं हैं।</td><td class="en"><strong>My friends don't have tickets.</strong></td></tr>
+<tr><td>उस लड़की के पास जानकारी नहीं है।</td><td class="en"><strong>That girl doesn't have information.</strong></td></tr>
+</tbody>
+</table>
+
+<h2>13. Interrogative Sentences</h2>
+
+<div class="box rule">
+<span class="label">Question Formula</span>
+<p class="formula">Do/Does + Subject + Have + Object?</p>
+</div>
+
+<p>Question banate waqt <strong>Do/Does</strong> ko beginning mein le aao. Subject uske baad aayega aur <strong>have</strong> use hoga.</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या तुम्हारे पास कुछ पैसे हैं?</td><td class="en"><strong>Do you have some money?</strong></td></tr>
+<tr><td>क्या राजू के पास पानी की बोतल है?</td><td class="en"><strong>Does Raju have a water bottle?</strong></td></tr>
+<tr><td>क्या उनके पास कुछ फल हैं?</td><td class="en"><strong>Do they have some fruits?</strong></td></tr>
+<tr><td>क्या मुन्ना के पास एक और मौका है?</td><td class="en"><strong>Does Munna have another chance?</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Interrogative Trick</span>
+<p class="formula">Statement → You have money.</p>
+<p class="formula">Question → Do you have money?</p>
+<p class="formula">Statement → Raju has a bottle.</p>
+<p class="formula">Question → Does Raju have a bottle?</p>
+</div>
+
+<h2>14. Interrogative — Five Practice Sentences</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या आपकी बहन के पास गाड़ी है?</td><td class="en"><strong>Does your sister have a vehicle?</strong></td></tr>
+<tr><td>क्या बच्चों के पास किताबें हैं?</td><td class="en"><strong>Do children have books?</strong></td></tr>
+<tr><td>क्या हम सबके पास पहचान पत्र है?</td><td class="en"><strong>Do we all have an identity card?</strong></td></tr>
+<tr><td>क्या तुम्हारे पास कोई सुझाव है?</td><td class="en"><strong>Do you have any suggestion?</strong></td></tr>
+<tr><td>क्या तुम्हारे पास नौकरी का अनुभव है?</td><td class="en"><strong>Do you have any job experience?</strong></td></tr>
+</tbody>
+</table>
+
+<h2>15. Interrogative Negative</h2>
+
+<div class="box rule">
+<span class="label">Question + Negative Formula</span>
+<p class="formula">Do/Does + Subject + NOT + Have + Object?</p>
+</div>
+
+<p>Yahan sentence ek saath <strong>question</strong> bhi hai aur <strong>negative</strong> bhi. Isliye <strong>Do/Does</strong> beginning mein aur <strong>not</strong> Subject ke baad aata hai.</p>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या तुम्हारे पास कपड़े नहीं हैं?</td><td class="en"><strong>Do you not have clothes?</strong></td></tr>
+<tr><td>क्या उसके पास फोन नहीं है?</td><td class="en"><strong>Does he not have a phone?</strong></td></tr>
+<tr><td>क्या विद्यार्थियों के पास skills नहीं हैं?</td><td class="en"><strong>Do students not have skills?</strong></td></tr>
+<tr><td>क्या लोगों के पास परिवार के लिए समय नहीं है?</td><td class="en"><strong>Do people not have time for family?</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Pattern Drill</span>
+<p class="formula">Do/Does → Subject → NOT → Have → Object?</p>
+</div>
+
+<h2>16. More Interrogative Negative Practice</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या शिक्षक के पास समय नहीं है?</td><td class="en"><strong>Does the teacher not have time?</strong></td></tr>
+<tr><td>क्या उस डॉक्टर के पास दवाएँ नहीं हैं?</td><td class="en"><strong>Does that doctor not have medicines?</strong></td></tr>
+<tr><td>क्या उस महिला के पास जानकारी नहीं है?</td><td class="en"><strong>Does that woman not have information?</strong></td></tr>
+<tr><td>क्या उसके पास सही जवाब नहीं है?</td><td class="en"><strong>Does he not have the right answer?</strong></td></tr>
+<tr><td>क्या कंपनी के पास कोई समाधान नहीं है?</td><td class="en"><strong>Does the company not have any solution?</strong></td></tr>
+</tbody>
+</table>
+
+<h2>17. WH-Questions with Have / Has</h2>
+
+<p>WH-question mein pehle <strong>WH word</strong> aata hai, phir <strong>do/does</strong>, phir subject aur main verb <strong>have</strong>.</p>
+
+<div class="badges">
+<div class="badge">What</div>
+<div class="badge">Where</div>
+<div class="badge">Which</div>
+<div class="badge">Who</div>
+<div class="badge">Why</div>
+<div class="badge">How</div>
+<div class="badge">When</div>
+<div class="badge">How many / much</div>
+</div>
+
+<div class="box rule">
+<span class="label">WH Formula</span>
+<p class="formula">WH + Do/Does + Subject + Have + ...?</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>उसके पास किताब क्यों है?</td><td class="en"><strong>Why does he have a book?</strong></td></tr>
+<tr><td>उनके पास यह जानकारी क्यों है?</td><td class="en"><strong>Why do they have this information?</strong></td></tr>
+<tr><td>उसके पास क्या है?</td><td class="en"><strong>What does he have?</strong></td></tr>
+<tr><td>तुम्हारे पास पैसा कैसे है?</td><td class="en"><strong>How do you have money?</strong></td></tr>
+<tr><td>आपके पास कौन सी फाइल है?</td><td class="en"><strong>Which file do you have?</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box warning">
+<span class="label">Important</span>
+<p>WH question mein bhi singular subject ke saath <strong>does</strong> aane par main verb <strong>have</strong> hi rahega:</p>
+<p class="formula">He has information. → What does he have?</p>
+</div>
+
+<h2>18. Have / Has — Complete Pattern Map</h2>
+
+<table>
+<thead><tr><th>Pattern</th><th>Formula</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Positive</td><td><strong>S + have/has + O</strong></td><td class="en">She has a bag.</td></tr>
+<tr><td>Negative</td><td><strong>S + do/does not + have + O</strong></td><td class="en">She does not have a bag.</td></tr>
+<tr><td>Interrogative</td><td><strong>Do/Does + S + have + O?</strong></td><td class="en">Does she have a bag?</td></tr>
+<tr><td>Interrogative Negative</td><td><strong>Do/Does + S + not + have + O?</strong></td><td class="en">Does she not have a bag?</td></tr>
+<tr><td>WH Question</td><td><strong>WH + Do/Does + S + have + O?</strong></td><td class="en">Why does she have a bag?</td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">One Rule to Remember</span>
+<p class="formula">Statement: He HAS a phone.</p>
+<p class="formula">Negative: He DOES NOT HAVE a phone.</p>
+<p class="formula">Question: DOES he HAVE a phone?</p>
+<p class="formula">WH: WHY DOES he HAVE a phone?</p>
+</div>
+
+<h2>19. Paragraph Translation — English → Hindi</h2>
+
+<p>Lecture mein paragraph translation ko daily practice ka part banaya gaya. Goal hai ki multiple sentences ko ek saath samajhkar translate kiya ja sake.</p>
+
+<div class="box example">
+<span class="label">Paragraph</span>
+<p class="en"><strong>There are four members in my family.</strong></p>
+<p class="hi">मेरे परिवार में चार सदस्य हैं।</p>
+
+<p class="en"><strong>My father has a car.</strong></p>
+<p class="hi">मेरे पिता के पास कार है।</p>
+
+<p class="en"><strong>My mother has a beautiful bag.</strong></p>
+<p class="hi">मेरी माँ के पास सुंदर बैग है।</p>
+
+<p class="en"><strong>I have two pens.</strong></p>
+<p class="hi">मेरे पास दो पेन हैं।</p>
+
+<p class="en"><strong>My brother does not have any mobile.</strong></p>
+<p class="hi">मेरे भाई के पास कोई मोबाइल नहीं है।</p>
+
+<p class="en"><strong>We don't have a big house.</strong></p>
+<p class="hi">हमारे पास बड़ा घर नहीं है।</p>
+
+<p class="en"><strong>Do you have a book?</strong></p>
+<p class="hi">क्या तुम्हारे पास किताब है?</p>
+
+<p class="en"><strong>Does Reena have a bicycle?</strong></p>
+<p class="hi">क्या रीना के पास साइकिल है?</p>
+
+<p class="en"><strong>Yes, she has a bicycle.</strong></p>
+<p class="hi">हाँ, उसके पास साइकिल है।</p>
+
+<p class="en"><strong>Our friends have many toys.</strong></p>
+<p class="hi">हमारे दोस्तों के पास कई खिलौने हैं।</p>
+
+<p class="en"><strong>But I don't have a toy.</strong></p>
+<p class="hi">लेकिन मेरे पास खिलौना नहीं है।</p>
+
+<p class="en"><strong>Does your brother have a new watch?</strong></p>
+<p class="hi">क्या तुम्हारे भाई के पास नई घड़ी है?</p>
+
+<p class="en"><strong>My sister has a colorful pencil.</strong></p>
+<p class="hi">मेरी बहन के पास रंगीन पेंसिल है।</p>
+
+<p class="en"><strong>He does not have a red umbrella.</strong></p>
+<p class="hi">उसके पास लाल छाता नहीं है।</p>
+
+<p class="en"><strong>Our school has a big ground.</strong></p>
+<p class="hi">हमारे स्कूल के पास बड़ा मैदान है।</p>
+
+<p class="en"><strong>Do they have homework today?</strong></p>
+<p class="hi">क्या उनके पास आज homework है?</p>
+</div>
+
+<div class="box practice">
+<span class="label">Translation Skill</span>
+<p>Paragraph ko sentence-by-sentence break karo, subject identify karo, phir <strong>have / has / do / does</strong> ka role check karke Hindi meaning banao.</p>
+</div>
+
+<h2>20. Vocabulary + Verb Practice</h2>
+
+<p>Lecture ke end mein daily-use verbs ko meaning + sentence ke saath practise kiya gaya.</p>
+
+<h3>Verbs 1–5</h3>
+
+<table>
+<thead><tr><th>Verb</th><th>Hindi Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>Finish</strong></td><td>खत्म करना / समाप्त करना</td><td class="en">I finished my today's class.</td></tr>
+<tr><td class="en"><strong>Fly</strong></td><td>उड़ना</td><td class="en">I can fly.<br>Birds can fly.</td></tr>
+<tr><td class="en"><strong>Break</strong></td><td>तोड़ना</td><td class="en">I can break the rules.</td></tr>
+<tr><td class="en"><strong>Receive</strong></td><td>प्राप्त करना</td><td class="en">She receives flowers.</td></tr>
+<tr><td class="en"><strong>Throw</strong></td><td>फेंकना</td><td class="en">He is throwing the ball.</td></tr>
+</tbody>
+</table>
+
+<h3>Verbs 6–10</h3>
+
+<table>
+<thead><tr><th>Verb</th><th>Hindi Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>Spend</strong></td><td>खर्च करना</td><td class="en">I spend money.</td></tr>
+<tr><td class="en"><strong>Follow</strong></td><td>पीछा करना / follow करना</td><td class="en">Do you follow me on Instagram?</td></tr>
+<tr><td class="en"><strong>Touch</strong></td><td>छूना</td><td class="en">Don't touch me.</td></tr>
+<tr><td class="en"><strong>Search</strong></td><td>खोजना</td><td class="en">I am searching for you.</td></tr>
+<tr><td class="en"><strong>Count</strong></td><td>गिनना</td><td class="en">Don't count numbers.</td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Verb Routine</span>
+<p>Har verb ke liye 3 steps follow karo:</p>
+<p class="formula">Meaning → Apna Sentence → Speak Aloud</p>
+</div>
+
+<h2>21. Homework</h2>
+
+<div class="box summary">
+<span class="label">Homework Task</span>
+<p>Lecture ke end mein <strong>10 English sentences</strong> ko practice/comment task ke roop mein diya gaya tha. Provided transcript mein un 10 sentences ka actual text visible nahi hai, isliye yahan unhe invent nahi kiya gaya hai.</p>
+</div>
+
+<div class="box practice">
+<span class="label">Self-Practice</span>
+<ol>
+<li><strong>Have/Has</strong> ke 5 positive sentences banao.</li>
+<li><strong>Don't/Doesn't have</strong> ke 5 negative sentences banao.</li>
+<li><strong>Do/Does</strong> se 5 questions banao.</li>
+<li>Upar diye gaye 10 verbs se ek-ek sentence bolo.</li>
+<li>Paragraph ko bina answer dekhe dobara translate karo.</li>
+</ol>
+</div>
+
+<h2>22. Revision Checklist</h2>
+
+<table>
+<thead><tr><th>Skill</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Have ke “take/offer” use ko samajhna</td><td>☐</td></tr>
+<tr><td>Have = possession</td><td>☐</td></tr>
+<tr><td>Have / Has subject rule</td><td>☐</td></tr>
+<tr><td>Present → Have / Has</td><td>☐</td></tr>
+<tr><td>Past → Had</td><td>☐</td></tr>
+<tr><td>Future → Will Have</td><td>☐</td></tr>
+<tr><td>Positive sentences</td><td>☐</td></tr>
+<tr><td>Negative with do/does</td><td>☐</td></tr>
+<tr><td>Interrogative with do/does</td><td>☐</td></tr>
+<tr><td>Interrogative negative</td><td>☐</td></tr>
+<tr><td>WH Questions</td><td>☐</td></tr>
+<tr><td>Infinitive: to + verb first form</td><td>☐</td></tr>
+<tr><td>Paragraph translation</td><td>☐</td></tr>
+<tr><td>10 verbs revision</td><td>☐</td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">Final Takeaway</span>
+<p class="formula">I / We / You / They → HAVE</p>
+<p class="formula">He / She / It / Name → HAS</p>
+<p class="formula">Negative → Do/Does + NOT + HAVE</p>
+<p class="formula">Question → Do/Does + Subject + HAVE?</p>
+<p class="formula">WH → WH + Do/Does + Subject + HAVE?</p>
+<p class="formula">Past → HAD &nbsp;&nbsp; | &nbsp;&nbsp; Future → WILL HAVE</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+
+<div class="footer">Made by Harshal Chauhan</div>
+
+</body>
+</html>
