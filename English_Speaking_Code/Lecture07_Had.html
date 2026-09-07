@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 07 — Had</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@page{size:A4 portrait;margin:0}
+*{box-sizing:border-box}
+body{
+  padding:15mm 14mm 14mm 18mm;margin:0;background:#FEFAF6;color:#2C2C2C;
+  font-family:'Poppins',sans-serif;font-size:10.5px;line-height:1.5;
+  -webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;
+  background-image:linear-gradient(to bottom,rgba(0,0,0,.028) 1px,transparent 1px);
+  background-size:100% 26px;
+}
+h1{font-size:31px;line-height:1.12;color:#5B2E3A;margin:0 0 10px;border-bottom:3px solid #2A7F7F;padding-bottom:7px;letter-spacing:-.3px}
+h2{font-size:19px;line-height:1.2;color:#2A7F7F;margin:19px 0 8px;border-bottom:2px solid #2A7F7F;padding-bottom:4px}
+h3{font-size:15px;line-height:1.25;color:#D36B46;margin:14px 0 6px}
+p{margin:5px 0}
+.lead{font-size:12.2px;line-height:1.62;color:#3D3D3D}
+.en{font-size:11.3px;font-weight:500;color:#1C1C1C}.en strong{font-weight:700}
+.hi{font-size:10px;font-style:italic;color:#666}
+.formula{font-size:12px;font-weight:700;color:#5B2E3A}
+.box{padding:9px 12px;margin:8px 0;border-radius:0 10px 10px 0;background:#fff;border-left:4px solid;box-shadow:0 1px 4px rgba(0,0,0,.035);break-inside:avoid}
+.rule{border-left-color:#5B2E3A;background:#FDF8F8}.rule .label{color:#5B2E3A}
+.example{border-left-color:#2A7F7F;background:#F5FBFB}.example .label{color:#2A7F7F}
+.tip{border-left-color:#2A7F7F;background:#F5FBFB}.tip .label{color:#2A7F7F}
+.practice{border-left-color:#6B5B7A;background:#F8F7FB}.practice .label{color:#6B5B7A}
+.summary{border-left-color:#D36B46;background:#FEF8F3}.summary .label{color:#D36B46}
+.warning{border-left-color:#C25A3C;background:#FEF4F2}.warning .label{color:#C25A3C}
+.label{display:block;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid #E2D8D0;border-radius:10px;overflow:hidden;margin:9px 0;background:#fff;break-inside:avoid}
+th{background:#F9F3EC;color:#5B2E3A;font-size:9.5px;padding:6px 8px;text-align:left;border-bottom:2px solid #D36B46}
+td{font-size:9.3px;padding:6px 8px;border-bottom:1px solid #EEE5DD;vertical-align:top}
+tr:last-child td{border-bottom:none}tr:nth-child(even) td{background:#FEFAF6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.card{background:#fff;border:1px solid #E2D8D0;border-radius:10px;padding:8px 9px;break-inside:avoid}
+.card p{margin:3px 0}
+.badges{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.badge{text-align:center;background:#fff;border:1px solid #E2D8D0;border-radius:9px;padding:7px 4px;font-weight:600;color:#5B2E3A}
+.ornament{text-align:center;color:#C8B6A6;font-size:14px;letter-spacing:5px;margin:14px 0;break-inside:avoid}
+ul,ol{margin:4px 0;padding-left:18px}li{margin:2px 0}
+.footer{margin-top:22px;border-top:1px solid #E2D8D0;padding-top:15px;text-align:center;color:#7A7A7A;font-size:9px;font-weight:500;letter-spacing:1px}
+</style>
+</head>
+<body>
+
+<h1>Lecture 07 — Had</h1>
+
+<p class="lead">
+Lecture 06 mein <strong>have / has</strong> ke through Present possession padha gaya tha. Lecture 07 mein isi concept ko Past mein le jaakar <strong>had</strong> sikhaya gaya—kisi person ke paas Past mein koi cheez <strong>thi / tha / the</strong>, usko kaise express karna hai.
+</p>
+
+<div class="box summary">
+<span class="label">Lecture Blueprint</span>
+<p class="formula">Perfect Learning Plan → Had → Positive → Negative → Infinitive → Interrogative → Interrogative Negative → WH Questions</p>
+<p class="formula">Paragraph Translation → 10 Daily-use Verbs → Homework</p>
+</div>
+
+<h2>1. Perfect English Learning Plan</h2>
+
+<p>Lecture ki beginning ek practical learning plan se hoti hai. English seekhne ke liye random topic se start karna enough nahi hai; ek systematic routine follow karna zaroori hai.</p>
+
+<div class="grid">
+<div class="card">
+<strong>01 — Start from Zero</strong>
+<p>Aapko English pehle se aati ho tab bhi basics se start karo.</p>
+</div>
+<div class="card">
+<strong>02 — Daily 1 Hour</strong>
+<p>Roz ek fixed hour English learning ko do.</p>
+</div>
+<div class="card">
+<strong>03 — Concept</strong>
+<p>Pehle topic ka concept samjho.</p>
+</div>
+<div class="card">
+<strong>04 — Practice + Vocabulary</strong>
+<p>Concept ke baad written practice aur vocabulary build karo.</p>
+</div>
+</div>
+
+<div class="box rule">
+<span class="label">Complete Learning Process</span>
+<p class="formula">Concept → Written Practice → Vocabulary → Speaking Practice</p>
+</div>
+
+<div class="box tip">
+<span class="label">Why Start from Zero?</span>
+<p>Sirf tenses ya advanced grammar jaanna enough nahi hai. Sounds, helping verbs, main verbs ke forms aur basic sentence formation clear hona bhi zaroori hai. Lecture mein isi reason se basics ko skip na karne par जोर diya gaya.</p>
+</div>
+
+<h2>2. Daily Speaking Practice</h2>
+
+<p>Written practice ke saath <strong>real speaking practice</strong> bhi karni hai. Sirf padhna aur likhna enough nahi; jo seekha hai usko bolna bhi hai.</p>
+
+<div class="box practice">
+<span class="label">Daily Routine</span>
+<ul>
+<li>1 hour ko planned parts mein divide karo.</li>
+<li>Concept ko samjho.</li>
+<li>Us topic ki written practice karo.</li>
+<li>Daily vocabulary build karo.</li>
+<li>Finally, English bolne ki real practice karo.</li>
+</ul>
+</div>
+
+<h2>3. Have/Has ka Past — HAD</h2>
+
+<p>Ab main topic start hota hai: Present ke <strong>have / has</strong> ka Past form <strong>had</strong> hota hai.</p>
+
+<div class="box rule">
+<span class="label">Definition</span>
+<p class="formula">HAD = Past mein kisi person / thing / noun ke paas koi cheez hona</p>
+</div>
+
+<div class="box rule">
+<span class="label">Basic Structure</span>
+<p class="formula">Subject + HAD + Object</p>
+</div>
+
+<p>Example ideas: bachpan mein cycle thi, kisi ke paas cows thi, dadaji ke paas turban tha—yaani possession Past mein exist karti thi.</p>
+
+<h2>4. Had — First Practice</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास खिलौने थे।</td><td class="en"><strong>I had toys.</strong></td></tr>
+<tr><td>मेरे पास साइकिल थी।</td><td class="en"><strong>I had a bike.</strong></td></tr>
+<tr><td>मेरे पास दोस्त थे।</td><td class="en"><strong>I had friends.</strong></td></tr>
+<tr><td>मेरे पास गाँव का खाना था।</td><td class="en"><strong>I had village food.</strong></td></tr>
+<tr><td>मेरे पास एक कुत्ता था।</td><td class="en"><strong>I had a dog.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">Quick Recall</span>
+<p class="formula">Present: I have a bike.</p>
+<p class="formula">Past: I had a bike.</p>
+</div>
+
+<h2>5. Had — Different Subjects</h2>
+
+<p>Past possession mein subject singular ya plural ho, <strong>had</strong> same rehta hai.</p>
+
+<div class="badges">
+<div class="badge">I → HAD</div>
+<div class="badge">You → HAD</div>
+<div class="badge">He / She → HAD</div>
+<div class="badge">We / They → HAD</div>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>उसके पास लैपटॉप था।</td><td class="en"><strong>He had a laptop.</strong></td></tr>
+<tr><td>हमारे पास आखिरी मौका था।</td><td class="en"><strong>We had a last chance.</strong></td></tr>
+<tr><td>उनके पास ऊँट थे।</td><td class="en"><strong>They had camels.</strong></td></tr>
+<tr><td>राजू के पास गाँव की जिम्मेदारी थी।</td><td class="en"><strong>Raju had responsibility of the village.</strong></td></tr>
+<tr><td>तुम्हारे पास English की किताब थी।</td><td class="en"><strong>You had an English book.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box rule">
+<span class="label">Golden Rule</span>
+<p class="formula">Past Possession → Every Subject + HAD</p>
+</div>
+
+<h2>6. More Had Practice</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>उसके पास पैसा था।</td><td class="en"><strong>He had money.</strong></td></tr>
+<tr><td>हमारे पास समय था।</td><td class="en"><strong>We had time.</strong></td></tr>
+<tr><td>छात्रों के पास पेन थे।</td><td class="en"><strong>Students had pens.</strong></td></tr>
+<tr><td>उसके पास जानकारी थी।</td><td class="en"><strong>He had information.</strong></td></tr>
+<tr><td>तुम्हारे पास मोबाइल था।</td><td class="en"><strong>You had a mobile.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Practice Drill</span>
+<p>Har sentence mein pehle <strong>subject</strong> identify karo. Past possession identify karte hi <strong>had</strong> choose karo.</p>
+</div>
+
+<h2>7. Past Negative — Did Not Have</h2>
+
+<p>Jab Past mein kisi ke paas koi cheez <strong>nahi thi</strong>, to lecture mein <strong>did not have</strong> ka pattern sikhaya gaya.</p>
+
+<div class="box rule">
+<span class="label">Negative Formula</span>
+<p class="formula">Subject + DID NOT + HAVE + Object</p>
+</div>
+
+<div class="box warning">
+<span class="label">Critical Rule</span>
+<p>Past negative mein <strong>did</strong> aane ke baad <strong>had</strong> use nahi karna hai. Main verb <strong>have</strong> form mein rehta hai.</p>
+<p class="formula">HAD → DID NOT HAVE</p>
+</div>
+
+<h3>Short Form</h3>
+<p class="formula">Did not → Didn't</p>
+<p class="en"><strong>I didn't have books.</strong></p>
+
+<h2>8. Past Negative — Examples</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास किताबें नहीं थीं।</td><td class="en"><strong>I did not have books.</strong></td></tr>
+<tr><td>उसके पास दूसरा मौका नहीं था।</td><td class="en"><strong>He did not have another chance.</strong></td></tr>
+<tr><td>उनके पास कार की चाबी नहीं थी।</td><td class="en"><strong>They did not have the car key.</strong></td></tr>
+<tr><td>लोगों के पास अच्छा नेता नहीं था।</td><td class="en"><strong>People did not have a good leader.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Compare</span>
+<p class="formula">Positive → He had a chance.</p>
+<p class="formula">Negative → He did not have a chance.</p>
+</div>
+
+<h2>9. Infinitive — Advanced Negative Sentences</h2>
+
+<p>Ab sentence ko advanced level par le jaaya gaya. “करने के लिए” batane ke liye <strong>to + Verb (First Form)</strong> use hota hai.</p>
+
+<div class="box rule">
+<span class="label">Infinitive Pattern</span>
+<p class="formula">Subject + did not have + Object + to + Verb (First Form)</p>
+</div>
+
+<div class="box example">
+<span class="label">Sentence Breakdown</span>
+<p class="formula">Main Part: Subject + did not have + Object</p>
+<p class="formula">Purpose Part: to + Verb (First Form)</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>मेरे पास खाने के लिए कुछ नहीं था।</td><td class="en"><strong>I did not have anything to eat.</strong></td></tr>
+<tr><td>उसके पास पढ़ने के लिए किताब नहीं थी।</td><td class="en"><strong>He did not have a book to read.</strong></td></tr>
+<tr><td>हमारे पास पीने के लिए पानी नहीं था।</td><td class="en"><strong>We did not have water to drink.</strong></td></tr>
+<tr><td>मुन्नी के पास बात करने के लिए मोबाइल नहीं था।</td><td class="en"><strong>Munni did not have a mobile to talk.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box tip">
+<span class="label">Alternative Form Taught</span>
+<p>“मेरे पास खाने के लिए कुछ नहीं था” ko lecture mein alternate structure se bhi explain kiya gaya:</p>
+<p class="en"><strong>I had nothing to eat.</strong></p>
+</div>
+
+<h2>10. Infinitive Rule — Remember</h2>
+
+<div class="three">
+<div class="card"><strong>To</strong><p>Infinitive marker</p></div>
+<div class="card"><strong>Verb</strong><p>First form</p></div>
+<div class="card"><strong>Purpose</strong><p>क्या करने के लिए?</p></div>
+</div>
+
+<p class="en"><strong>to eat</strong> = खाने के लिए &nbsp; | &nbsp; <strong>to read</strong> = पढ़ने के लिए &nbsp; | &nbsp; <strong>to drink</strong> = पीने के लिए &nbsp; | &nbsp; <strong>to talk</strong> = बात करने के लिए</p>
+
+<h2>11. Extra Negative Practice</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>राम और श्याम के पास टिकट नहीं था।</td><td class="en"><strong>Ram and Shyam did not have tickets.</strong></td></tr>
+<tr><td>मेरे दोस्त के पास बाइक नहीं थी।</td><td class="en"><strong>My friend did not have a bike.</strong></td></tr>
+<tr><td>गाँव में बिजली नहीं थी।</td><td class="en"><strong>There was no electricity in the village.</strong></td></tr>
+<tr><td>बच्चों के पास homework नहीं था।</td><td class="en"><strong>Children did not have homework.</strong></td></tr>
+<tr><td>उसके पास कोई solution नहीं था।</td><td class="en"><strong>He did not have any solution.</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box example">
+<span class="label">There Was Alternative</span>
+<p>“गाँव में बिजली नहीं थी” ko lecture mein <strong>there was</strong> structure ke through bhi dikhaya gaya:</p>
+<p class="en"><strong>There was no electricity in the village.</strong></p>
+</div>
+
+<h2>12. Interrogative — Did + Have</h2>
+
+<p>Past possession ka question banane ke liye <strong>did</strong> ko sentence ki beginning mein le aao.</p>
+
+<div class="box rule">
+<span class="label">Interrogative Formula</span>
+<p class="formula">DID + Subject + HAVE + Object?</p>
+</div>
+
+<div class="box warning">
+<span class="label">Never Forget</span>
+<p class="formula">Did + Subject + HAVE</p>
+<p>Question mein <strong>had</strong> nahi; <strong>have</strong> aayega.</p>
+</div>
+
+<h2>13. Interrogative — Examples</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या तुम्हारे पास राजू का नंबर था?</td><td class="en"><strong>Did you have Raju's number?</strong></td></tr>
+<tr><td>क्या उनके पास सोने की ईंट थी?</td><td class="en"><strong>Did they have a golden brick?</strong></td></tr>
+<tr><td>क्या उसके पास English का ज्ञान था?</td><td class="en"><strong>Did he have English knowledge?</strong></td></tr>
+<tr><td>क्या हमारे पास आधुनिक हथियार थे?</td><td class="en"><strong>Did we have modern weapons?</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Question Transformation</span>
+<p class="formula">You had Raju's number.</p>
+<p class="formula">→ Did you have Raju's number?</p>
+</div>
+
+<h2>14. Interrogative — Five Practice Sentences</h2>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या पुलिस के पास सबूत था?</td><td class="en"><strong>Did the police have proof?</strong></td></tr>
+<tr><td>क्या कंपनी के पास बजट था?</td><td class="en"><strong>Did the company have a budget?</strong></td></tr>
+<tr><td>क्या तुम्हारे पास उत्तर था?</td><td class="en"><strong>Did you have an answer?</strong></td></tr>
+<tr><td>क्या खिलाड़ी के पास जूते थे?</td><td class="en"><strong>Did the player have shoes?</strong></td></tr>
+<tr><td>क्या टीचर के पास project था?</td><td class="en"><strong>Did the teacher have a project?</strong></td></tr>
+</tbody>
+</table>
+
+<h2>15. Interrogative Negative</h2>
+
+<p>Ab question ke saath negative meaning bhi add karna hai.</p>
+
+<div class="box rule">
+<span class="label">Question + Negative Formula</span>
+<p class="formula">DID + Subject + NOT + HAVE + Object?</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>क्या मेरे पास अवसर नहीं था?</td><td class="en"><strong>Did I not have a chance?</strong></td></tr>
+<tr><td>क्या तुम्हारे माता-पिता के पास कार नहीं थी?</td><td class="en"><strong>Did your parents not have a car?</strong></td></tr>
+<tr><td>क्या वैज्ञानिकों के पास data नहीं था?</td><td class="en"><strong>Did scientists not have data?</strong></td></tr>
+<tr><td>क्या शिक्षकों के पास सामग्री नहीं थी?</td><td class="en"><strong>Did teachers not have material?</strong></td></tr>
+<tr><td>क्या दुकानदार के पास change नहीं था?</td><td class="en"><strong>Did the shopkeeper not have change?</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Formation Order</span>
+<p class="formula">DID → Subject → NOT → HAVE → Object?</p>
+</div>
+
+<h2>16. WH-Questions with Had</h2>
+
+<p>Past possession se related WH-question mein WH word ke baad <strong>did</strong> aata hai, phir subject, aur phir <strong>have</strong>.</p>
+
+<div class="badges">
+<div class="badge">What</div>
+<div class="badge">Where</div>
+<div class="badge">Which</div>
+<div class="badge">Who</div>
+<div class="badge">Why</div>
+<div class="badge">How</div>
+<div class="badge">Whose</div>
+<div class="badge">What type / Which</div>
+</div>
+
+<div class="box rule">
+<span class="label">WH Formula</span>
+<p class="formula">WH + DID + Subject + HAVE + ...?</p>
+</div>
+
+<table>
+<thead><tr><th>Hindi</th><th>English</th></tr></thead>
+<tbody>
+<tr><td>तुम्हारे पास क्या था?</td><td class="en"><strong>What did you have?</strong></td></tr>
+<tr><td>उसके पास किसका फोन था?</td><td class="en"><strong>Whose phone did he have?</strong></td></tr>
+<tr><td>राम के पास किस रंग की कार थी?</td><td class="en"><strong>Which color car did Ram have?</strong></td></tr>
+<tr><td>रोहन के पास कौन सा मोबाइल था?</td><td class="en"><strong>Which mobile did Rohan have?</strong></td></tr>
+<tr><td>तुम्हारे पास कौन सा document था?</td><td class="en"><strong>Which document did you have?</strong></td></tr>
+</tbody>
+</table>
+
+<div class="box warning">
+<span class="label">WH Rule</span>
+<p>WH word सबसे पहले आएगा। उसके बाद <strong>did</strong>, फिर subject और फिर <strong>have</strong>.</p>
+<p class="formula">What + did + you + have?</p>
+</div>
+
+<h2>17. Had — Complete Pattern Map</h2>
+
+<table>
+<thead><tr><th>Pattern</th><th>Formula</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Positive</td><td><strong>S + had + O</strong></td><td class="en">He had a laptop.</td></tr>
+<tr><td>Negative</td><td><strong>S + did not have + O</strong></td><td class="en">He did not have a laptop.</td></tr>
+<tr><td>Interrogative</td><td><strong>Did + S + have + O?</strong></td><td class="en">Did he have a laptop?</td></tr>
+<tr><td>Interrogative Negative</td><td><strong>Did + S + not + have + O?</strong></td><td class="en">Did he not have a laptop?</td></tr>
+<tr><td>WH Question</td><td><strong>WH + did + S + have + O?</strong></td><td class="en">What did he have?</td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">One-Line Memory</span>
+<p class="formula">Positive → HAD</p>
+<p class="formula">Negative → DID NOT HAVE</p>
+<p class="formula">Question → DID + HAVE</p>
+<p class="formula">WH → WH + DID + HAVE</p>
+</div>
+
+<h2>18. Paragraph Translation — Hindi → English</h2>
+
+<p>Ab lecture mein एक paragraph diya gaya jisme <strong>was / were</strong> aur <strong>had</strong> dono concepts revise karaye gaye. Important point: paragraph ko sirf likhna nahi, <strong>bolkar</strong> translate karne ki practice bhi karni hai.</p>
+
+<div class="box example">
+<span class="label">Paragraph — Model Translation</span>
+
+<p class="hi">कल मैं बहुत खुश था।</p>
+<p class="en"><strong>Yesterday I was very happy.</strong></p>
+
+<p class="hi">मेरा भाई घर पर था।</p>
+<p class="en"><strong>My brother was at home.</strong></p>
+
+<p class="hi">मेरी बहन स्कूल में थी।</p>
+<p class="en"><strong>My sister was in the school.</strong></p>
+
+<p class="hi">हम सब पार्क में थे।</p>
+<p class="en"><strong>We were all in the park.</strong></p>
+
+<p class="hi">मौसम बहुत अच्छा था।</p>
+<p class="en"><strong>The weather was very cool / pleasant.</strong></p>
+
+<p class="hi">मेरे दोस्त वहाँ थे।</p>
+<p class="en"><strong>My friends were also there.</strong></p>
+
+<p class="hi">हम सब साथ में बहुत खुश थे।</p>
+<p class="en"><strong>We were very happy together.</strong></p>
+
+<p class="hi">रात को मैं थोड़ा थका हुआ था।</p>
+<p class="en"><strong>I was a little tired at night.</strong></p>
+
+<p class="hi">लेकिन मेरा दिन बहुत अच्छा था।</p>
+<p class="en"><strong>But my day was very fine.</strong></p>
+
+<p class="hi">हमारे शिक्षक भी पार्क में थे।</p>
+<p class="en"><strong>Our teachers were also in the park.</strong></p>
+
+<p class="hi">सभी बच्चे खेल के लिए तैयार थे।</p>
+<p class="en"><strong>All children were ready for the game.</strong></p>
+</div>
+
+<div class="box practice">
+<span class="label">Activity</span>
+<p>Isi pattern ki practice ke liye given sentences ko English mein convert karo. Focus rakho ki Past state/location ke liye <strong>was/were</strong> aur Past possession ke liye <strong>had</strong> identify ho.</p>
+</div>
+
+<h2>19. 10 Daily-use Verbs — Part 1</h2>
+
+<table>
+<thead><tr><th>Verb</th><th>Hindi Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>Hunt</strong></td><td>शिकार करना</td><td class="en">The lion hunted the deer.</td></tr>
+<tr><td class="en"><strong>Boil</strong></td><td>उबालना</td><td class="en">I boil water to take a bath.</td></tr>
+<tr><td class="en"><strong>Pour</strong></td><td>उड़ेलना / डालना</td><td class="en">I pour water on the plants.</td></tr>
+<tr><td class="en"><strong>Accept</strong></td><td>स्वीकार करना</td><td class="en">I accept your proposal.</td></tr>
+<tr><td class="en"><strong>Sweep</strong></td><td>झाड़ू लगाना</td><td class="en">She sweeps the floor every day.</td></tr>
+</tbody>
+</table>
+
+<h2>20. 10 Daily-use Verbs — Part 2</h2>
+
+<table>
+<thead><tr><th>Verb</th><th>Hindi Meaning</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td class="en"><strong>Begin</strong></td><td>शुरू करना</td><td class="en">Begin the class.</td></tr>
+<tr><td class="en"><strong>Lose</strong></td><td>खोना</td><td class="en">I will lose you.</td></tr>
+<tr><td class="en"><strong>Create</strong></td><td>बनाना</td><td class="en">Create a video.</td></tr>
+<tr><td class="en"><strong>Repair</strong></td><td>ठीक करना / सुधारना</td><td class="en">Repair my car.</td></tr>
+<tr><td class="en"><strong>Fight</strong></td><td>झगड़ा करना</td><td class="en">You always fight with me.</td></tr>
+</tbody>
+</table>
+
+<div class="box practice">
+<span class="label">Verb Practice Method</span>
+<p>Har verb ko sirf meaning ke saath mat yaad karo. <strong>Meaning + one sentence + speaking</strong> ke saath practice karo.</p>
+</div>
+
+<h2>21. Daily Vocabulary Goal</h2>
+
+<div class="box summary">
+<span class="label">50-Day Vocabulary Target</span>
+<p>Lecture series ka repeated target hai ki daily-use verbs ko systematically build kiya jaye. Is lesson mein 10 verbs ka practice set diya gaya: <strong>hunt, boil, pour, accept, sweep, begin, lose, create, repair, fight.</strong></p>
+</div>
+
+<h2>22. Homework</h2>
+
+<div class="box practice">
+<span class="label">Homework — 10 Sentences</span>
+<p>Lecture ke end mein <strong>10 sentences</strong> ka homework diya gaya. Provided transcript mein un 10 homework sentences ka actual text visible nahi hai, isliye unhe invent nahi kiya gaya hai.</p>
+</div>
+
+<div class="box practice">
+<span class="label">Self-Practice Revision</span>
+<ol>
+<li><strong>Had</strong> ke 5 positive sentences banao.</li>
+<li><strong>Did not have</strong> ke 5 negative sentences banao.</li>
+<li><strong>Did + have</strong> ke 5 questions banao.</li>
+<li><strong>Did + not + have</strong> ke 5 interrogative-negative sentences banao.</li>
+<li><strong>WH + did + have</strong> ke 5 questions banao.</li>
+<li>10 verbs se ek-ek spoken sentence bolo.</li>
+</ol>
+</div>
+
+<h2>23. Revision Checklist</h2>
+
+<table>
+<thead><tr><th>Concept</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>English learning plan: Start from Zero</td><td>☐</td></tr>
+<tr><td>Daily 1-hour routine</td><td>☐</td></tr>
+<tr><td>Concept + Practice + Vocabulary + Speaking</td><td>☐</td></tr>
+<tr><td>Had = Past possession</td><td>☐</td></tr>
+<tr><td>Subject + had + object</td><td>☐</td></tr>
+<tr><td>Did not have</td><td>☐</td></tr>
+<tr><td>Didn't have</td><td>☐</td></tr>
+<tr><td>Infinitive: to + Verb First Form</td><td>☐</td></tr>
+<tr><td>Did + Subject + Have?</td><td>☐</td></tr>
+<tr><td>Did + Subject + Not + Have?</td><td>☐</td></tr>
+<tr><td>WH + Did + Subject + Have?</td><td>☐</td></tr>
+<tr><td>Was/Were + Had paragraph practice</td><td>☐</td></tr>
+<tr><td>10 daily-use verbs</td><td>☐</td></tr>
+<tr><td>Homework</td><td>☐</td></tr>
+</tbody>
+</table>
+
+<div class="box summary">
+<span class="label">Final Takeaway</span>
+<p class="formula">Past Possession → HAD</p>
+<p class="formula">Past Negative → DID NOT HAVE</p>
+<p class="formula">Past Question → DID + HAVE</p>
+<p class="formula">Past Question Negative → DID + NOT + HAVE</p>
+<p class="formula">WH Question → WH + DID + HAVE</p>
+<p class="formula">Purpose / “करने के लिए” → TO + Verb First Form</p>
+</div>
+
+<div class="ornament">✿ ✿ ✿</div>
+<div class="footer">Made by Harshal Chauhan</div>
+
+</body>
+</html>
