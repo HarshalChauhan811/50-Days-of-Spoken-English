@@ -10,7 +10,7 @@ This repository contains structured notes and learning resources organized acros
 
 ---
 
-## 🎯 What This Series Covers
+## 🎯 What This Series Covers   
 
 The learning journey progresses through the major building blocks of practical Spoken English:
 
