@@ -42,7 +42,7 @@ The series focuses on understanding sentence structures, building sentences, pra
 
 # 📚 Complete 50-Lecture Roadmap
 
-## 🟢 Foundation & Core Structures
+## 🟢 Foundation & Core Structures   
 
 | Day | Topic                                    |
 | --- | ---------------------------------------- |
